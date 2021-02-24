@@ -159,10 +159,7 @@ nav li:hover{
 #head_center .btn_head:hover {
     background: none;
     color: white;
-    transition: 0.2s;
-    
-    
-
+    transition: 0.3s;
 }
 
 /* texte légende */
@@ -211,16 +208,15 @@ nav li:hover{
     justify-content: space-between;
     width: 100%;
     height: auto;
-    padding-top: 6%;
-    padding-bottom: 6%;
-    height: 90vh;
+    padding-top: 7%;
+    padding-bottom: 15%;
+    height: auto;
 }
 
 /* div principal contenant les images*/
 #image_present{
     width: 40%;
     position: relative;
-    height: 80%;
 }
 
 /* image texaf*/
@@ -289,7 +285,8 @@ nav li:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: auto;
+    padding: 50px;
 
    
  }
@@ -297,16 +294,101 @@ nav li:hover{
      padding: 50px 0;
      font-size: 40px;
     font-family: 'Montserrat-Bold';
-    padding: 100px 0;
+    padding: 50px 0;
  }
  /*travail sur la div des images*/
  #partner_img{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
+    margin: 50px;
     
    
  }
  #partner_img img{
      width: 100px;
+     max-width: 100%;
+     
  }
+
+ /* ------------------------------ Troisème section -----------------*/
+ #section3{
+     width: 100vw;
+     height: auto;
+     padding: 100px 0;
+
+ }
+
+ #accompagnement{
+    display: flex;
+    justify-content: center;
+
+}
+.accompagnement_box{
+    background-color: #FFF;
+    padding: 20px;
+    width: 35%;
+    margin: 0 20px;
+    border-radius: 0px 0px 20px 20px;
+  
+}
+#accompagnement_a{
+    border-top: 10px solid #FFE64D;
+}
+#accompagnement_b{
+    border-top: 10px solid #d92950;
+}
+
+ #section3 h1{
+    font-size: 40px;
+    font-family: 'Montserrat-Bold';
+    text-align: center;
+    margin-bottom: 50px;
+
+ }
+ #section3 h3{
+     text-align: center;
+     color: #d92950;
+     font-size: 30px;
+     font-family: 'Montserrat-Bold' ;
+     margin: 20px 0px;
+ }
+
+ .accompagnement_texte p:nth-child(2){
+     font-size: 1em;
+     font-family: 'Montserrat_regular';
+     text-align: center;
+     width: 100% ;
+     
+ }
+
+ .accompagnement_texte p:nth-child(3){
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+
+ }
+ .accompagnement_texte a{
+    
+    color: #FFF;
+    background-color: #d92950;
+    border-radius: 15px;
+    text-transform: uppercase ;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 24px 0 0;
+    border: 2px solid #d92950 ;
+    font-size: 1.25em;
+    padding: 15px 25px;
+    
+    
+}
+
+.accompagnement_texte a:hover{
+    background: none ;
+    color: #d92950;
+    transition-duration: 0.3s;
+}
