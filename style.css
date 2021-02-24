@@ -83,7 +83,6 @@ nav li a{
     font-family: Roboto, sans-serif;
     font-size: 1em;
     font-weight: 100;
-    font-style: normal;
     font-weight: bold; 
     color: #FFFFFF;
     text-decoration: none;
@@ -113,13 +112,12 @@ nav li:hover{
 #head_center h1{
     width: 50%;
     font-family: 'Montserrat_ultra', sans-serif;
-    font-size: 5.3em;
-    font-style: normal;
+    font-size: 80px;
     color: #FFFFFF;
-    height: auto;
     margin-top: 7%;
     text-align: center;
-    
+   
+  
 }
 
 /* modification de la couleur jaune sur qualité */
@@ -133,7 +131,7 @@ nav li:hover{
     flex-direction: row;
     justify-content: space-around; 
     margin-top: 5%; 
-    width: 36%;
+    width: 40%;
     height: auto;
  
 }
@@ -291,22 +289,24 @@ nav li:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
-    padding: 100px 0;
+    height: 70vh;
+
    
  }
-
+ #section2 h1{
+     padding: 50px 0;
+     font-size: 40px;
+    font-family: 'Montserrat-Bold';
+    padding: 100px 0;
+ }
  /*travail sur la div des images*/
  #partner_img{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    
    
  }
  #partner_img img{
-     width: 50px;
-     height: auto;
-     
-     
-     
+     width: 100px;
  }
