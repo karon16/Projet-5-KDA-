@@ -1,19 +1,24 @@
 @font-face{
     font-family: 'Montserrat_ultra' ;
-    src: url(Montserrat/);   
+    src: url(Montserrat/Montserrat-Black.ttf);   
 }
 @font-face{
     font-family:'Montserrat_regular' ;
     src: url(Montserrat/Montserrat-Regular.ttf);
 }
-
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url(Montserrat/Montserrat-Bold.ttf);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat_regular', sans-serif;
+}
 .grey_section h1{
     font-family: 'Montserrat_ultra', sans-serif;
 font-size: 40px;
-font-weight: 700;
 font-style: normal;
 color: #424345;
-line-height: 1.2em;
+
 }
 
 *{
@@ -21,15 +26,13 @@ line-height: 1.2em;
     padding: 0;
     box-sizing: border-box;
 }
-    body {
-        margin: 0;
-        font-family: Roboto,sans-serif;
-        font-weight: 400;
-        line-height: 1.5;
-        color: rgba(24,0,39,.87);
-        text-align: left;
-        background-color: #fff;
-    }
+body {
+    margin: 0;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    overflow-x: hidden;
+}
 
 header{
     display: flex;
@@ -38,8 +41,8 @@ header{
 
 }
 #logo{
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 15%;
+    margin-top: 10%;
     width: 100px;
 
 }
@@ -52,27 +55,28 @@ header{
     justify-content: space-between;
     background: #d92950;
     position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+    width: 100vw;
+    height: 80px;
+    
     
 }
 
 nav ol{
     display: flex;
     flex-direction: row ;
-    margin-top: 30px;
+    margin-top: 7%;
   
     
 }
 
 nav li{
-    margin-right :50px;
+    margin-right: 50px;
     list-style: none;
     
-
 }
 /*travail sur les liens de la navigation*/
 nav li a{
@@ -97,24 +101,25 @@ nav li:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 115vh;
+    height: 110vh;
     background-image: url(img/hero-background.jpg) ;
     background-size: cover;
+    width: 100vw;
+    height: auto;
     
 }
 
 /* travail sur le texte principal de l'en-tête */
 #head_center h1{
     width: 50%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat_ultra', sans-serif;
     font-size: 5.3em;
     font-style: normal;
     color: #FFFFFF;
-    
+    height: auto;
     margin-top: 7%;
-    letter-spacing: 0em;
     text-align: center;
-    line-height: 1.2em;
+    
 }
 
 /* modification de la couleur jaune sur qualité */
@@ -129,6 +134,8 @@ nav li:hover{
     justify-content: space-around; 
     margin-top: 5%; 
     width: 36%;
+    height: auto;
+ 
 }
 /* modification du style de liste*/
 #head_center li{
@@ -168,10 +175,10 @@ nav li:hover{
     font-family: Roboto, sans-serif;
     font-size: 1.1em;
     margin-top: 3%;
+    height: auto;
  
  
 }
-
 
 /* logo technos*/
 #head_logos{
@@ -179,6 +186,8 @@ nav li:hover{
     justify-content: space-around;
     width: 85%;
     margin-top : 3.7%;
+    margin-bottom: 8%;
+    height: auto;
 }
 #head_logos img{
     width: 55px;
@@ -186,19 +195,29 @@ nav li:hover{
 }
 
 
+
 /*------------------------------------------------------------------------------------------*/
 /*Prmière section*/
 .grey_section{
-    background-color: #f1f0f3;
+    background-color: #f1f0f3; 
+    color: #424345;
+}
+.pink_section{
+    background: #d92950;
+    color: white;
+
+}
+
+#section1{
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: auto;
     padding-top: 6%;
     padding-bottom: 6%;
-    height: 90vh; 
-    color: #424345;
+    height: 90vh;
 }
+
 /* div principal contenant les images*/
 #image_present{
     width: 40%;
@@ -216,30 +235,31 @@ nav li:hover{
 
 /* image cohorte kda 2020 */
 .img_kda2020{
-    width: 60%;
+    width: 65%;
     border-radius: 20px;
     position: absolute;
     top: 60%;
-    left: 40%;
+    left: 35%;
 }
 
 
 /* div principal illustrtion developpeurs*/
 #quality_dev{
     width: 60%;  
+    margin-left: 10px;
 }
 
 #quality_dev h1{
-    font-size: 2.7em;
+    font-family: 'Montserrat-Bold';
+    font-size: 2.5em;
     font-style: normal;
     margin-left:15px ;
 }
 
 #quality_dev h5{
-    font-family: 'Montserrat_regular', sans-serif;
-    font-size: 20px;
+    font-size: 1.2em;
     margin-top: 5px;
-    font-weight: 900;
+    font-family: 'Montserrat-Bold', sans-serif;
 }
 /* groupe des 4 illustrations developpeurs */
 .quality_dev_illustration_group{
@@ -248,14 +268,14 @@ nav li:hover{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    padding: 0 20px;
 }
 /* div contenant l'icone et le texte h5*/
 .quality_dev_illustration{
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: auto;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 /* travail sur les icones */
 .grey_section_icons{
@@ -264,3 +284,29 @@ nav li:hover{
     padding-bottom: 20px;
 }
 
+
+
+/* -----------------------------Deuxième section --------------------------------- */
+#section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    padding: 100px 0;
+   
+ }
+
+ /*travail sur la div des images*/
+ #partner_img{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+   
+ }
+ #partner_img img{
+     width: 50px;
+     height: auto;
+     
+     
+     
+ }
