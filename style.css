@@ -398,7 +398,50 @@ nav li:hover{
     margin: 0px 0px 100px;
     
 }
+
 #section4_slide{
     display: flex;
+    overflow: hidden;
+    justify-content: space-around;
     overflow: scroll;
+}
+.box_image{
+    padding: 0 30px;
+    
+}
+.box_image img{
+    width: 350px;
+    border-radius: 10px;
+}
+.box_image p{
+    
+    font-family: 'Montserrat_regular' ;
+    padding: 1px 0;
+}
+.box_image a{
+    text-decoration: none;
+    color: #fff;
+}
+.box_image .ligne_1{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Ubuntu Mono", monospace;
+}
+.box_image .ligne_2{
+    background-color: #ED0058;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    
+}
+.ligne_2 p{
+    margin-right:10px;
+}
+.ligne_2 svg{
+    margin: 0px 5px;
+}
+.ligne_1, .ligne_2{
+    margin: 10px 0;
 }
