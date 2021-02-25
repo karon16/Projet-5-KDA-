@@ -401,16 +401,20 @@ nav li:hover{
 
 #section4_slide{
     display: flex;
-    overflow: hidden;
     justify-content: space-around;
-    overflow: scroll;
+    width: 70vw;
+    margin: auto;
+    /*overflow : scroll;*/
 }
+/*#section4_slide::-webkit-scrollbar{
+    background: transparent;
+}*/
 .box_image{
     padding: 0 30px;
     
 }
 .box_image img{
-    width: 350px;
+    width: 22vw;
     border-radius: 10px;
 }
 .box_image p{
@@ -423,7 +427,7 @@ nav li:hover{
     color: #fff;
 }
 .box_image .ligne_1{
-    font-size: 0.8em;
+    font-size: 0.7em;
     display: flex;
     justify-content: space-between;
     font-family: "Ubuntu Mono", monospace;
@@ -440,8 +444,90 @@ nav li:hover{
     margin-right:10px;
 }
 .ligne_2 svg{
-    margin: 0px 5px;
+    margin-right: 5px;
 }
 .ligne_1, .ligne_2{
     margin: 10px 0;
 }
+
+/* --------------------------------------------------- secetion5 ------------------------------------------------------------ */
+#section5{
+    background: #fff;
+    width: 100vw;
+    padding: 100px 0;
+}
+#line_box{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.tableaux{
+    margin: 0px 25px;
+
+}
+#section5 h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#tableau_1{
+    width: 45vw;
+}
+#tableau_1 h3, #tableau_2 h3{
+    color: white;
+    font-size: 2em;
+    margin-left: 20px;
+}
+#tableau1_head{
+    height: 70px;
+    background: #D92950 ;
+    padding: 20px 0;
+}
+#tableau1_body{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background: #F1F0F3;
+    border-radius: 0 0 20px 20px;
+}
+.logo_svg{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.logo_svg figure{
+    text-align: center;
+    width: 200px;
+}
+#tableau1_body img{
+    width: 50px;
+}
+
+
+#tableau_2{
+    width: 30vw;
+    background: #F1F0F3;
+    border-radius: 0 0 20px 20px;
+}
+
+#tableau2_head{
+    height: 70px;
+    background: #341F41 ;
+    padding: 20px 0;
+}
+#tableau2_body{
+    padding: 40px 30px; 
+    padding-bottom: 50px !important;
+}
+#tableau2_body ol{
+    line-height: 2em;
+    list-style-position: inside;
+}
+#tableau2_texte{
+    background: #DFDEE1;
+    padding: 50px 35px;
+    padding-bottom: 60px !important ;
+    border-radius: 10px;
+}
+
+
+/* ------------------------------------------------------ section 6 ----------------------------*/
