@@ -38,14 +38,13 @@ body {
 }
 
 .grey_section h1{
-    font-size: 40px;
+   
     font-style: normal;
     color: #424345;
     font-family: 'Montserrat-Bold';
     font-size: 2.5em;
 }
 .pink_section h1{
-    font-size: 40px;
     font-style: normal;
     color: #fff;
     font-family: 'Montserrat-Bold';
@@ -203,7 +202,7 @@ nav li:hover{
 
 
 
-/*------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
 /*Prmière section*/
 #section1{
     display: flex;
@@ -275,7 +274,7 @@ nav li:hover{
 
 
 
-/* -----------------------------Deuxième section --------------------------------- */
+/* --------------------------------------------------Deuxième section ------------------------------------------------ */
 #section2{
     display: flex;
     flex-direction: column;
@@ -305,7 +304,7 @@ nav li:hover{
      
  }
 
- /* ------------------------------ Troisème section -----------------*/
+ /* ------------------------------------- Troisème section  --------------------------------------------------------------*/
  #section3{
      width: 100vw;
      height: auto;
@@ -517,6 +516,9 @@ nav li:hover{
 #tableau2_body{
     padding: 40px 30px; 
     padding-bottom: 50px !important;
+    font-family: "Ubuntu Mono", monospace;
+font-size: 20px;
+font-weight: 400;
 }
 #tableau2_body ol{
     line-height: 2em;
@@ -531,3 +533,140 @@ nav li:hover{
 
 
 /* ------------------------------------------------------ section 6 ----------------------------*/
+#section6{
+    background: #AE3753;
+    padding: 100px 0;
+}
+#section6 h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+#pret_illustration{
+    width: 100vw;
+}
+#alignement_icon_pret{
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+    
+}
+.pret_icon{
+    margin: 20px;
+    width: 300px; 
+    
+}
+.pret_icon h4{
+
+    margin-right: 15px;
+    text-align: center;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-style: normal;
+    
+    
+}
+.image_fleche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
+}
+.icon_container{
+    width: 70px ;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 25px;
+    
+    
+}
+.fleche img{
+    width: 30px;
+}
+.icon_container img{
+    width: 35px;
+    max-width: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 1px;
+}
+
+#section6 a{
+    
+    color: #FFF;
+    background-color: #d92950;
+    border-radius: 15px;
+    text-transform: uppercase ;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 24px 0 0;
+    border: 2px solid #d92950 ;
+    font-size: 1.25em;
+    padding: 20px 25px;
+
+}
+
+#section6 p{
+    text-align: center;
+    margin-top: 100px;
+}
+#section6 a:hover{
+    background: none ;
+    border: 2px solid white ;
+    color: whitr;
+    transition-duration: 0.3s;
+}
+
+/* ---------------------------------------------------- section 7------------------------------------ */
+#section7{
+    padding: 100px 30px ;
+}
+#create_emploi{
+    display: flex;
+    justify-content: center;
+
+}
+.emploi_all{
+    margin: 0px 15px;
+}
+#emploi_1{
+    width: 40vw;
+}
+#emploi_1 img{
+    width: 40vw;
+}
+#emploi_1 p{
+    margin: 50px 0;
+}
+
+
+#emploi_2{
+    width: 40vw;
+}
+
+
+/* ------------------------------------------------- section 8 --------------------------- */
+#section8{
+    padding: 100px;
+    background: #000;
+    text-align: center;
+}
+#img_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Montserrat-Bold';
+    font-size: 2.5em;
+}
+.logo_media{
+    margin: 0 30px;
+}
