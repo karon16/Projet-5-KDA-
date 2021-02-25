@@ -10,22 +10,15 @@
     font-family: 'Montserrat-Bold';
     src: url(Montserrat/Montserrat-Bold.ttf);
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Montserrat_regular', sans-serif;
-}
-.grey_section h1{
-    font-family: 'Montserrat_ultra', sans-serif;
-font-size: 40px;
-font-style: normal;
-color: #424345;
 
-}
-
+/* Réinitialisation des marges de la page*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Parametrage du body*/
 body {
     margin: 0;
     font-family: Roboto,sans-serif;
@@ -34,20 +27,46 @@ body {
     overflow-x: hidden;
 }
 
+/* parametrage par défaut de différentes sections*/
+.grey_section{
+    background-color: #f1f0f3; 
+    color: #424345;
+}
+.pink_section{
+    background: #d92950;
+    color: white;
+}
+
+.grey_section h1{
+    font-size: 40px;
+    font-style: normal;
+    color: #424345;
+    font-family: 'Montserrat-Bold';
+    font-size: 2.5em;
+}
+.pink_section h1{
+    font-size: 40px;
+    font-style: normal;
+    color: #fff;
+    font-family: 'Montserrat-Bold';
+    font-size: 2.5em;
+} 
+
+/* Travail sur le header soit la section 0*/
 header{
     display: flex;
     flex-direction: column;
     margin-top: 80px;
 
 }
+/* Redimensionnement du logo*/
 #logo{
     margin-left: 15%;
     margin-top: 10%;
     width: 100px;
 
 }
-
-/*travail sur la barre de navigation*/
+/*travail sur la barre de navigation, fixation et autre*/
 #navigation{
     
     display: flex;
@@ -60,24 +79,21 @@ header{
     right: 0;
     z-index: 5000;
     width: 100vw;
-    height: 80px;
-    
-    
+    height: 80px;   
 }
-
+/* bloc de liste*/
 nav ol{
     display: flex;
     flex-direction: row ;
-    margin-top: 7%;
-  
-    
+    margin-top: 7%;  
 }
 
+/* reconfiguration de style de liste et espacement */
 nav li{
     margin-right: 50px;
-    list-style: none;
-    
+    list-style: none;   
 }
+
 /*travail sur les liens de la navigation*/
 nav li a{
     font-family: Roboto, sans-serif;
@@ -87,16 +103,15 @@ nav li a{
     color: #FFFFFF;
     text-decoration: none;
 }
-nav .accueil{
-    border-bottom: 2.5px solid rgba(255,4,107,1);
-}
-/*  la pseudo classe pour le reste des listes*/
+/** --------- ici sera placé la pseudo classe active pour le lien ---------/
 
+/*  la pseudo classe hover des listes*/
 nav li:hover{
     border-bottom: 2.5px solid rgba(255,4,107,1);
 }
+
 /* travail sur le bloc central (h1, bouton et logos */
-#head_center{
+#head_center{ /* image de fond et dimensionnement*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +120,6 @@ nav li:hover{
     background-size: cover;
     width: 100vw;
     height: auto;
-    
 }
 
 /* travail sur le texte principal de l'en-tête */
@@ -116,8 +130,6 @@ nav li:hover{
     color: #FFFFFF;
     margin-top: 7%;
     text-align: center;
-   
-  
 }
 
 /* modification de la couleur jaune sur qualité */
@@ -135,11 +147,12 @@ nav li:hover{
     height: auto;
  
 }
+
 /* modification du style de liste*/
 #head_center li{
     list-style: none;
-
 }
+
 /* création du bouton*/
 #head_center .btn_head{
     list-style: none;
@@ -155,6 +168,7 @@ nav li:hover{
     border:  2px solid white;
     
 }
+
 /*travail sur le hover*/
 #head_center .btn_head:hover {
     background: none;
@@ -171,8 +185,6 @@ nav li:hover{
     font-size: 1.1em;
     margin-top: 3%;
     height: auto;
- 
- 
 }
 
 /* logo technos*/
@@ -193,16 +205,6 @@ nav li:hover{
 
 /*------------------------------------------------------------------------------------------*/
 /*Prmière section*/
-.grey_section{
-    background-color: #f1f0f3; 
-    color: #424345;
-}
-.pink_section{
-    background: #d92950;
-    color: white;
-
-}
-
 #section1{
     display: flex;
     justify-content: space-between;
@@ -241,13 +243,6 @@ nav li:hover{
 #quality_dev{
     width: 60%;  
     margin-left: 10px;
-}
-
-#quality_dev h1{
-    font-family: 'Montserrat-Bold';
-    font-size: 2.5em;
-    font-style: normal;
-    margin-left:15px ;
 }
 
 #quality_dev h5{
@@ -292,8 +287,6 @@ nav li:hover{
  }
  #section2 h1{
      padding: 50px 0;
-     font-size: 40px;
-    font-family: 'Montserrat-Bold';
     padding: 50px 0;
  }
  /*travail sur la div des images*/
@@ -328,7 +321,7 @@ nav li:hover{
 .accompagnement_box{
     background-color: #FFF;
     padding: 20px;
-    width: 35%;
+    width: 600px;
     margin: 0 20px;
     border-radius: 0px 0px 20px 20px;
   
@@ -391,4 +384,21 @@ nav li:hover{
     background: none ;
     color: #d92950;
     transition-duration: 0.3s;
+}
+
+
+/* ------------------------------------------- Quatrième sectin ----------------------------------*/
+#section4{
+    padding: 100px 0;
+    width: 100vw;
+  
+}
+#section4 h1{
+    text-align: center;
+    margin: 0px 0px 100px;
+    
+}
+#section4_slide{
+    display: flex;
+    overflow: scroll;
 }
