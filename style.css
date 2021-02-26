@@ -286,12 +286,12 @@ nav li:hover{
  }
  #section2 h1{
      padding: 50px 0;
-    padding: 50px 0;
+     
  }
  /*travail sur la div des images*/
  #partner_img{
     display: flex;
-    width: 100%;
+    width: 70vw;
     justify-content: space-around;
     align-items: center;
     margin: 50px;
@@ -625,36 +625,65 @@ font-weight: 400;
 /* ---------------------------------------------------- section 7------------------------------------ */
 #section7{
     padding: 100px 30px ;
+    width: 100vw;
 }
 #create_emploi{
     display: flex;
     justify-content: center;
 
 }
-.emploi_all{
-    margin: 0px 15px;
-}
+
 #emploi_1{
-    width: 40vw;
+    width: 38vw;
 }
 #emploi_1 img{
-    width: 40vw;
+    width: 100%;
 }
-#emploi_1 p{
-    margin: 50px 0;
-}
+#emploi_1 p:nth-of-type(1){
+    margin-top: 50px;
+    font-family: 'Montserrat_regular';
 
+    
+}
+#emploi_1 p:last-child{
+    margin-top: 30px;
+}
+#emploi_1 span{
+    color: #D92950;
+}
 
 #emploi_2{
     width: 40vw;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
-
-
+.emploi2_bloc{
+    width: 40%;
+    margin: 10px;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 20px;
+}
+.emploi2_bloc img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+.emploi2_bloc h3{
+    font-size: 1.55em;
+    margin-bottom: 10px;
+}
+#emploi_2 p:nth-of-type(2){
+    font-family: 'Montserrat_regular';
+}
 /* ------------------------------------------------- section 8 --------------------------- */
 #section8{
     padding: 100px;
     background: #000;
     text-align: center;
+    width: 100vw;
 }
 #img_media{
     display: flex;
@@ -669,4 +698,44 @@ h1{
 }
 .logo_media{
     margin: 0 30px;
+}
+
+/* __________________________________________________ section 9 _______________________________*/
+#section9{
+    padding:100px 0;
+    background: #FFFFFF;
+}
+#section9 h1{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#soutien_kda{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    
+    margin: auto;
+ 
+}
+.soutien_img, .soutien_twitter{
+    display: flex;
+
+}
+.soutien_img_bloc,.soutien_twitter_bloc {
+    width: 280px;
+    margin: 0px 15px;
+}
+.soutien_img_bloc img{
+    width: 280px;
+    border-radius:15px ;
+}
+.soutien_img_bloc p{
+    margin: 20px 0;
+    font-family: 'Montserrat_regular';
+    line-height: 1.5em;
+}
+.soutien_img_bloc strong{
+    font-family: 'Montserrat-Bold';
 }
