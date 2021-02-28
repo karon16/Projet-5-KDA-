@@ -1,15 +1,10 @@
-@font-face{
-    font-family: 'Montserrat_ultra' ;
-    src: url(Montserrat/Montserrat-Black.ttf);   
-}
-@font-face{
-    font-family:'Montserrat_regular' ;
-    src: url(Montserrat/Montserrat-Regular.ttf);
-}
-@font-face{
-    font-family: 'Montserrat-Bold';
-    src: url(Montserrat/Montserrat-Bold.ttf);
-}
+/*
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+
+*/
 
 /* Réinitialisation des marges de la page*/
 *{
@@ -21,13 +16,10 @@
 /* Parametrage du body*/
 body {
     margin: 0;
-    font-family: Roboto,sans-serif;
-    font-weight: 400;
-    background-color: #fff;
     overflow-x: hidden;
 }
 
-/* parametrage par défaut de différentes sections*/
+/* parametrage par défaut de différentes sections, textes, couleurs, marges*/
 .grey_section{
     background-color: #f1f0f3; 
     color: #424345;
@@ -37,20 +29,33 @@ body {
     color: white;
 }
 
-.grey_section h1{
-   
-    font-style: normal;
-    color: #424345;
-    font-family: 'Montserrat-Bold';
-    font-size: 2.5em;
-}
-.pink_section h1{
+.titre_blanc{
     font-style: normal;
     color: #fff;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
     font-size: 2.5em;
 } 
-
+.titre_noir{
+    font-style: normal;
+    color: #424345;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.titre_left{
+    font-style: normal;
+    color: #424345;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400 ;
+}
 /* Travail sur le header soit la section 0*/
 header{
     display: flex;
@@ -95,7 +100,7 @@ nav li{
 
 /*travail sur les liens de la navigation*/
 nav li a{
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 100;
     font-weight: bold; 
@@ -124,11 +129,12 @@ nav li:hover{
 /* travail sur le texte principal de l'en-tête */
 #head_center h1{
     width: 50%;
-    font-family: 'Montserrat_ultra', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     color: #FFFFFF;
     margin-top: 7%;
     text-align: center;
+    font-weight: 900;
 }
 
 /* modification de la couleur jaune sur qualité */
@@ -159,7 +165,7 @@ nav li:hover{
     padding: 18px 23px;
     border-radius: 15px;
     text-transform: uppercase ;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
     color: #d92950;
@@ -180,7 +186,8 @@ nav li:hover{
     color: white;
     width: 45%;
     text-align: center;
-    font-family: Roboto, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400 ;
     font-size: 1.1em;
     margin-top: 3%;
     height: auto;
@@ -247,7 +254,8 @@ nav li:hover{
 #quality_dev h5{
     font-size: 1.2em;
     margin-top: 5px;
-    font-family: 'Montserrat-Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700 ;
 }
 /* groupe des 4 illustrations developpeurs */
 .quality_dev_illustration_group{
@@ -266,7 +274,7 @@ nav li:hover{
     margin-top: 40px;
 }
 /* travail sur les icones */
-.grey_section_icons{
+.quality_dev_icons{
     width: 50px;
     border-bottom: 2px solid red;
     padding-bottom: 20px;
@@ -280,13 +288,7 @@ nav li:hover{
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding: 50px;
-
-   
- }
- #section2 h1{
-     padding: 50px 0;
-     
+    padding: 100px 0;
  }
  /*travail sur la div des images*/
  #partner_img{
@@ -294,14 +296,11 @@ nav li:hover{
     width: 70vw;
     justify-content: space-around;
     align-items: center;
-    margin: 50px;
-    
-   
+    margin: 70px 0; 
  }
  #partner_img img{
      width: 100px;
-     max-width: 100%;
-     
+     max-width: 100%;   
  }
 
  /* ------------------------------------- Troisème section  --------------------------------------------------------------*/
@@ -315,6 +314,7 @@ nav li:hover{
  #accompagnement{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 
 }
 .accompagnement_box{
@@ -332,27 +332,19 @@ nav li:hover{
     border-top: 10px solid #d92950;
 }
 
- #section3 h1{
-    font-size: 40px;
-    font-family: 'Montserrat-Bold';
-    text-align: center;
-    margin-bottom: 50px;
 
- }
  #section3 h3{
      text-align: center;
      color: #d92950;
      font-size: 30px;
-     font-family: 'Montserrat-Bold' ;
+     font-family: 'Montserrat', sans-serif ;
+     font-weight: 700;
      margin: 20px 0px;
  }
 
  .accompagnement_texte p:nth-child(2){
-     font-size: 1em;
-     font-family: 'Montserrat_regular';
      text-align: center;
-     width: 100% ;
-     
+  
  }
 
  .accompagnement_texte p:nth-child(3){
@@ -368,7 +360,7 @@ nav li:hover{
     background-color: #d92950;
     border-radius: 15px;
     text-transform: uppercase ;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-decoration: none;
     margin: 24px 0 0;
@@ -416,11 +408,7 @@ nav li:hover{
     width: 22vw;
     border-radius: 10px;
 }
-.box_image p{
-    
-    font-family: 'Montserrat_regular' ;
-    padding: 1px 0;
-}
+
 .box_image a{
     text-decoration: none;
     color: #fff;
@@ -429,7 +417,11 @@ nav li:hover{
     font-size: 0.7em;
     display: flex;
     justify-content: space-between;
-    font-family: "Ubuntu Mono", monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400 ;
+    line-height: 1.5em;
+  
+    
 }
 .box_image .ligne_2{
     background-color: #ED0058;
@@ -437,6 +429,7 @@ nav li:hover{
     display: flex;
     justify-content: flex-start;
     padding: 5px;
+    font-family: "Ubuntu Mono", monospace;
     
 }
 .ligne_2 p{
@@ -459,15 +452,14 @@ nav li:hover{
     display: flex;
     justify-content: center;
     width: 100vw;
+
+    margin-top: 50px;
 }
 .tableaux{
     margin: 0px 25px;
 
 }
-#section5 h1{
-    text-align: center;
-    margin-bottom: 40px;
-}
+
 #tableau_1{
     width: 45vw;
 }
@@ -475,6 +467,8 @@ nav li:hover{
     color: white;
     font-size: 2em;
     margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700 ;
 }
 #tableau1_head{
     height: 70px;
@@ -496,11 +490,13 @@ nav li:hover{
 .logo_svg figure{
     text-align: center;
     width: 200px;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-size: 1.2em;
 }
 #tableau1_body img{
     width: 50px;
 }
-
 
 #tableau_2{
     width: 30vw;
@@ -515,10 +511,10 @@ nav li:hover{
 }
 #tableau2_body{
     padding: 40px 30px; 
-    padding-bottom: 50px !important;
+    padding-bottom: 50px ;
     font-family: "Ubuntu Mono", monospace;
-font-size: 20px;
-font-weight: 400;
+    font-size: 20px;
+    font-weight: 400;
 }
 #tableau2_body ol{
     line-height: 2em;
@@ -527,7 +523,7 @@ font-weight: 400;
 #tableau2_texte{
     background: #DFDEE1;
     padding: 50px 35px;
-    padding-bottom: 60px !important ;
+    padding-bottom: 60px ;
     border-radius: 10px;
 }
 
@@ -537,10 +533,7 @@ font-weight: 400;
     background: #AE3753;
     padding: 100px 0;
 }
-#section6 h1{
-    text-align: center;
-    padding-bottom: 50px;
-}
+
 #pret_illustration{
     width: 100vw;
 }
@@ -549,6 +542,7 @@ font-weight: 400;
     justify-content: space-around;
     width: 80vw;
     margin: auto;
+    margin-top: 30px;
     
 }
 .pret_icon{
@@ -595,13 +589,12 @@ font-weight: 400;
     border: 1px;
 }
 
-#section6 a{
-    
+#section6 a{ 
     color: #FFF;
     background-color: #d92950;
     border-radius: 15px;
     text-transform: uppercase ;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-decoration: none;
     margin: 24px 0 0;
@@ -618,7 +611,7 @@ font-weight: 400;
 #section6 a:hover{
     background: none ;
     border: 2px solid white ;
-    color: whitr;
+    color: white;
     transition-duration: 0.3s;
 }
 
@@ -639,12 +632,7 @@ font-weight: 400;
 #emploi_1 img{
     width: 100%;
 }
-#emploi_1 p:nth-of-type(1){
-    margin-top: 50px;
-    font-family: 'Montserrat_regular';
 
-    
-}
 #emploi_1 p:last-child{
     margin-top: 30px;
 }
@@ -653,34 +641,33 @@ font-weight: 400;
 }
 
 #emploi_2{
-    width: 40vw;
-    
+    width: 40vw;   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
 }
 .emploi2_bloc{
-    width: 40%;
+    width: 42%;
     margin: 10px;
     border-radius: 20px;
     background: #FFF;
-    padding: 20px;
+    padding: 20px 20px;
 }
 .emploi2_bloc img{
     width: 50px;
     margin-bottom: 10px;
 }
 .emploi2_bloc h3{
-    font-size: 1.55em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700 ;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
-#emploi_2 p:nth-of-type(2){
-    font-family: 'Montserrat_regular';
-}
+
 /* ------------------------------------------------- section 8 --------------------------- */
 #section8{
-    padding: 100px;
+    padding: 100px 0;
     background: #000;
     text-align: center;
     width: 100vw;
@@ -689,12 +676,7 @@ font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-h1{
-    color: #fff;
-    margin-bottom: 40px;
-    font-family: 'Montserrat-Bold';
-    font-size: 2.5em;
+    margin-top: 50px;
 }
 .logo_media{
     margin: 0 30px;
@@ -705,18 +687,15 @@ h1{
     padding:100px 0;
     background: #FFFFFF;
 }
-#section9 h1{
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 20px;
-}
+
 #soutien_kda{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 80vw;
-    
     margin: auto;
+    margin-top: 50px;
+    
  
 }
 .soutien_img, .soutien_twitter{
@@ -725,17 +704,200 @@ h1{
 }
 .soutien_img_bloc,.soutien_twitter_bloc {
     width: 280px;
-    margin: 0px 15px;
+    margin: 25px 15px;
 }
 .soutien_img_bloc img{
     width: 280px;
     border-radius:15px ;
+    margin-bottom: 20px;
 }
-.soutien_img_bloc p{
-    margin: 20px 0;
-    font-family: 'Montserrat_regular';
-    line-height: 1.5em;
-}
+
 .soutien_img_bloc strong{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700 ;
 }
+
+/* ____________________________________________________________ Formulaire _______________________________________________________*/
+#section10{
+    padding: 100px 0;
+    background: #1D1B25;
+    color: white;
+}
+#section10 #formulaire{
+    width: 75vw;
+    margin: auto;
+}
+#section10 fieldset{
+    border: none;
+    color: rgba(250, 250, 250, 0.9);
+
+}
+#section10 legend{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 8px;
+}
+#formulaire > p:nth-of-type(1){
+    font-weight: 700;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#formulaire input, select, textarea{
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;   
+
+}
+textarea{
+    padding-top: 20px;
+}
+.placeholder ::placeholder,#formulaire option { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+  
+  }
+  
+  .placeholder :-ms-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+  
+  }
+  .placeholder ::-ms-input-placeholder { 
+    font-family: 'Roboto', sans-serif;   
+    font-size: 1.2em;
+}
+.form_last_p{
+    line-height: 1.5em;
+    color: rgba(250, 250, 250, 0.9);
+}
+
+
+#section10 .colonne{
+    width: 49%;
+    
+}
+#formulaire_colonne{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-between;
+}
+#section10 input:not(.envoie), select{
+    width: 100%;
+    height: 40px;
+    margin: 8px 0;
+}
+textarea{
+    width: 100%;
+    height: 60px;
+    margin: 8px 0;
+}
+input:focus, select:focus, textarea:focus{
+    outline: 3px solid rgba(217, 41, 80, 0.3);
+ 
+    
+}
+#section10 a{
+    color: #D92950;
+    text-decoration: none;
+}
+#section10 a:hover{
+    border-bottom: 2.5px solid #D92950 ;
+}
+#formulaire button{
+    color: #FFF;
+    background-color: #d92950;
+    border-radius: 15px;
+    text-transform: uppercase ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 25px;
+    border: 2px solid #31052C ;
+    font-size: 1.05em;
+    margin-top: 20px;
+    
+}
+#formulaire button:hover{
+    background: transparent;
+    transition: 0.3s;
+    border: 2px solid #d92950 
+}
+/* _______________________________________________________ bas de page ___________________________________________________________*/
+footer{
+    padding: 100px 0;
+    background: #2D2D2D;
+    color: #fff;
+}
+.flex_linge{
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    margin: auto;
+}
+.adresse, .inscription{
+    padding: 0 15px;
+    width: 50%;
+}
+address{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1.6em ;
+    margin: 0 0 32px;
+    line-height: 1.3em;
+}
+.adresse a{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1.6em ;
+    color: #d92950;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+.adresse_img{
+    margin: 40px 0px 0px ;  
+
+}
+.adresse svg{
+    margin-right: 20px ;
+}
+
+.inscription p:nth-of-type(1){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    margin: 0 0 25px;
+}
+.inscription input{
+    height: 60px;
+    width: 70%;
+    padding-left : 10px;
+}
+.inscription input:focus{
+    outline: 3px solid rgba(217, 41, 80, 0.3);
+}
+.inscription button{
+    height: 60px;
+    color: #FFF;
+    background-color: #d92950;
+    border-radius: 0px 15px 15px 0px;
+    text-transform: uppercase ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 15px 25px;
+    font-size: 1.05em;
+    border: none;
+    
+    position: absolute;
+}
+
+.inscription form{
+    margin-bottom: 230px;
+}
+
+.inscription a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
