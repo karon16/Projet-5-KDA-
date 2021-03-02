@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Kinshasa Digital : Agence de developpement</title>
@@ -13,37 +14,36 @@
 </head>
 <body>
     <!-- En-tête de la page-->
-    <header>
-        <!-- création des différents blocs verticals parents et horizontals enfants-->
+    <header class="flex_column">
         <!-- barre de navigation-->
-        <div id="navigation">
+        <div id="navigation" class="flex_row flex_between">
             <!-- image-->
             <div id="image">
                 <a href="Index.html"><img src="img/logo_white.png" alt="Logo Kinshasa Digital Academy" id="logo"></a>
             </div>
-            <!-- barre de navigation proprement dite-->
+            <!-- barre de navigation-->
             <nav>
-                <ol>
+                <ol class="flex_row">
                     <li class="accueil"><a href="index.html">Accueil</a></li>
                     <li><a href="#">Academy</a></li>
-                    <li><a href="#">Emploi</a></li>
+                    <li><a href="Emploi.html">Emploi</a></li>
                     <li><a href="#">contact</a></li>
                 </ol>
             </nav>
         </div>
 
         <!-- texte et autre-->
-        <div id="head_center">
+        <div id="head_center" class="flex_column">
             <!--Du texte et ensuite un bloc conteneur-->
             <h1 class="titre_blanc">BESOIN DE DÉVELOPPEURS <span id="dev_qualifié">&lt; QUALIFIÉS &gt; ?</span></h1>
-            <ol>
+            <ol class="flex_row flex_center">
                 <li><a href="#" class="btn_head">Planifier un appel</a></li>
                 <li><a href="#" class="btn_head">Demander un devis</a></li>
             </ol>
             
             <p>Des développeurs expérimentés prêt à rejoindre votre équipe en full remote et avec les compétences dont vous avez besoin.</p>
             
-            <div id="head_logos">
+            <div id="head_logos"  class="flex_row flex_around">
                 <img src="img/technos/nodejs.png" alt="LogoNode Js">
                 <img src="img/technos/react.png" alt="Logo React">
                 <img src="img/technos/vuejs.png" alt="logo Vue Js">
@@ -58,14 +58,14 @@
     </header>
 <!-- ____________________________________________________________________________________________________ -->
 <!-- Travail sur la premiere section-->
-    <section class="grey_section" id="section1">
+    <section class="grey_section flex_row flex_between" id="section1">
         <div id="image_present">
             <img src="img/illustrations/texaf_campus.jpg" alt="batiment Kinshasa Digital" class="img_texaf">
             <img src="img/illustrations/kda_cohorte_2020.jpg" alt="Cohorte 2020 Kinshasa Digital Academy" class="img_kda2020">
         </div>
         <div id="quality_dev" >
-            <h1 class="titre_left">Des développeurs &lt;qualifiés&gt; et prêts à intégrer vos équipes en remote !</h1>
-            <div class="quality_dev_illustration_group">
+            <h1 class="titre_noir titre_left">Des développeurs &lt;qualifiés&gt; et prêts à intégrer vos équipes en remote !</h1>
+            <div class="quality_dev_illustration_group flex_row">
                 <div class="quality_dev_illustration" >
                     <img src="img/illustrations/paper.svg" alt="Illustraton papier" class="quality_dev_icons">
                     <h5>Des développeurs qualifiés</h5>
@@ -87,9 +87,9 @@
     </section>
 
     <!-- _____________________________________Trvail sur la Deuxième section ______________________________ -->
-    <section class="pink_section" id="section2">
+    <section class="pink_section flex_column" id="section2">
         <h1 class="titre_blanc">Nous avons le plaisir de travailler avec</h1>
-        <div id="partner_img">
+        <div id="partner_img" class="flex_row flex_between">
             <div><img src="img/partners/facebook-white.png" alt="Logo Facebook"></div>
             <div><img src="img/partners/orange-white.png" alt="Logo Orange"></div>
             <div><img src="img/partners/deloitte-white.png" alt="Logo Deloitte"></div>
@@ -108,7 +108,7 @@
      <!-- _________________________Trvail sur la Troisième section ______________________________ -->
     <section id="section3" class="grey_section">
          <h1 class="titre_noir">Nous accompagnons vos projets</h1>
-         <div id="accompagnement">
+         <div id="accompagnement" class="flex_row flex_center">
              <div class="accompagnement_box" id="accompagnement_a">
                  <div class="accompagnement_texte">
                     <h3>&gt; Réaliser votre projet</h3>
@@ -130,28 +130,27 @@
     <!-- __________________________ Travail sur la section4 ______________________ -->
     <section id="section4" class="pink_section">
         <h1 class="titre_blanc">Ce que nous avons developpé</h1>
-        <div id="section4_slide"> <!-- div contenant les fénêtres -->
+        <div id="section4_slide" class="flex_row flex_around"> <!-- div contenant les fénêtres -->
             <div class="box_image">
                 <div class="section4_image">
                     <a href="https://tandemadvertising.com/"><img src="img/works/tandem.png" alt=" Capture du site tandem adverstising"></a>
                 </div>
                 <div class="box_text">
-                    <div class="ligne_1">
+                    <div class="ligne_1 flex_row">
                         <div class="text_ligne1">
                             <p>Client: Tandem Advertising</p>
                             <p><a href="https://tandemadvertising.com/">Site : https://tandemadvertising.com/</a></p>
                         </div>
                         <div class="badge">
-
+                            <div class="pays">
+                                <img src="img/svg_pays/suisse.svg" alt="logo pays suisse"> 
+                                <span class="nom_pays">SUISSE</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="ligne_2">
-                        <p><svg width="1em" height="1em" viewBox="0 0 256 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                            <g fill="white">
-                                <path d="M18.1239675,127.500488 C18.1239675,170.795707 43.284813,208.211252 79.7700163,225.941854 L27.5938862,82.985626 C21.524813,96.5890081 18.1239675,111.643057 18.1239675,127.500488 L18.1239675,127.500488 Z M201.345041,121.980878 C201.345041,108.462829 196.489366,99.1011382 192.324683,91.8145041 C186.780098,82.8045528 181.583089,75.1745041 181.583089,66.1645528 C181.583089,56.1097886 189.208976,46.7501789 199.950569,46.7501789 C200.435512,46.7501789 200.89548,46.8105366 201.367935,46.8375935 C181.907772,29.0091707 155.981008,18.1239675 127.50465,18.1239675 C89.2919675,18.1239675 55.6727154,37.7298211 36.1147317,67.4258211 C38.6809756,67.5028293 41.0994472,67.5569431 43.1536911,67.5569431 C54.5946016,67.5569431 72.3043902,66.1687154 72.3043902,66.1687154 C78.2007154,65.8211382 78.8958699,74.4814309 73.0057886,75.1786667 C73.0057886,75.1786667 67.0803252,75.8759024 60.4867642,76.2213984 L100.318699,194.699447 L124.25574,122.909138 L107.214049,76.2172358 C101.323967,75.8717398 95.744,75.1745041 95.744,75.1745041 C89.8497561,74.8290081 90.540748,65.8169756 96.4349919,66.1645528 C96.4349919,66.1645528 114.498602,67.5527805 125.246439,67.5527805 C136.685268,67.5527805 154.397138,66.1645528 154.397138,66.1645528 C160.297626,65.8169756 160.990699,74.4772683 155.098537,75.1745041 C155.098537,75.1745041 149.160585,75.8717398 142.579512,76.2172358 L182.107577,193.798244 L193.017756,157.340098 C197.746472,142.211122 201.345041,131.34465 201.345041,121.980878 L201.345041,121.980878 Z M129.42361,137.068228 L96.6056585,232.43135 C106.404423,235.31187 116.76722,236.887415 127.50465,236.887415 C140.242211,236.887415 152.457366,234.685398 163.827512,230.68722 C163.534049,230.218927 163.267642,229.721496 163.049106,229.180358 L129.42361,137.068228 L129.42361,137.068228 Z M223.481756,75.0225691 C223.95213,78.5066667 224.218537,82.2467642 224.218537,86.2699187 C224.218537,97.3694959 222.145561,109.846894 215.901659,125.448325 L182.490537,222.04774 C215.00878,203.085008 236.881171,167.854829 236.881171,127.502569 C236.883252,108.485724 232.025496,90.603187 223.481756,75.0225691 L223.481756,75.0225691 Z M127.50465,0 C57.2003902,0 0,57.1962276 0,127.500488 C0,197.813073 57.2003902,255.00722 127.50465,255.00722 C197.806829,255.00722 255.015545,197.813073 255.015545,127.500488 C255.013463,57.1962276 197.806829,0 127.50465,0 L127.50465,0 Z M127.50465,249.162927 C60.4243252,249.162927 5.84637398,194.584976 5.84637398,127.500488 C5.84637398,60.4201626 60.4222439,5.84637398 127.50465,5.84637398 C194.582894,5.84637398 249.156683,60.4201626 249.156683,127.500488 C249.156683,194.584976 194.582894,249.162927 127.50465,249.162927 L127.50465,249.162927 Z"></path>
-                            </g>
-                        </svg>Wordpress - (custom theme)</p>
+                    <div class="ligne_2 flex_row">
+                        <p><i class="fab fa-wordpress  work_icon"></i>Wordpress - (custom theme)</p>
                     </div>
                 </div>
             </div>
@@ -160,26 +159,22 @@
                     <a href="https://companyleagues.be/"><img src="img/works/companyleagues.png" alt="Capture du site company leagues"></a>
                 </div>
                 <div class="box_text">
-                    <div class="ligne_1">
+                    <div class="ligne_1 flex_row">
                         <div class="text_ligne1">
                             <p>Client: companyleagues</p>
                             <p><a href="https://companyleagues.be/">Site : https://companyleagues.be/</a></p>
                         </div>
                         <div class="badge">
-
+                            <div class="pays">
+                                <img src="img/svg_pays/flag-for-belgium.svg" alt="logo pays suisse"> 
+                                <span class="nom_pays">BELGIQUE</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="ligne_2">
-                        <p><svg fill="#fff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="1em" height="1em">
-                            <path d="M 5 5 L 5 27 L 27 27 L 27 5 L 5 5 z M 7 7 L 25 7 L 25 25 L 7 25 L 7 7 z M 11 11 L 11 21 L 13 21 L 13 11 L 11 11 z M 15 11 L 15 13 L 21 13 L 21 11 L 15 11 z M 15 15 L 15 17 L 21 17 L 21 15 L 15 15 z M 15 19 L 15 21 L 21 21 L 21 19 L 15 19 z"/>
-                            </svg>Elementor</p>
-                        <p><?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-                            <svg width="1em" height="1em" viewBox="0 0 256 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                                <g fill="white">
-                                    <path d="M18.1239675,127.500488 C18.1239675,170.795707 43.284813,208.211252 79.7700163,225.941854 L27.5938862,82.985626 C21.524813,96.5890081 18.1239675,111.643057 18.1239675,127.500488 L18.1239675,127.500488 Z M201.345041,121.980878 C201.345041,108.462829 196.489366,99.1011382 192.324683,91.8145041 C186.780098,82.8045528 181.583089,75.1745041 181.583089,66.1645528 C181.583089,56.1097886 189.208976,46.7501789 199.950569,46.7501789 C200.435512,46.7501789 200.89548,46.8105366 201.367935,46.8375935 C181.907772,29.0091707 155.981008,18.1239675 127.50465,18.1239675 C89.2919675,18.1239675 55.6727154,37.7298211 36.1147317,67.4258211 C38.6809756,67.5028293 41.0994472,67.5569431 43.1536911,67.5569431 C54.5946016,67.5569431 72.3043902,66.1687154 72.3043902,66.1687154 C78.2007154,65.8211382 78.8958699,74.4814309 73.0057886,75.1786667 C73.0057886,75.1786667 67.0803252,75.8759024 60.4867642,76.2213984 L100.318699,194.699447 L124.25574,122.909138 L107.214049,76.2172358 C101.323967,75.8717398 95.744,75.1745041 95.744,75.1745041 C89.8497561,74.8290081 90.540748,65.8169756 96.4349919,66.1645528 C96.4349919,66.1645528 114.498602,67.5527805 125.246439,67.5527805 C136.685268,67.5527805 154.397138,66.1645528 154.397138,66.1645528 C160.297626,65.8169756 160.990699,74.4772683 155.098537,75.1745041 C155.098537,75.1745041 149.160585,75.8717398 142.579512,76.2172358 L182.107577,193.798244 L193.017756,157.340098 C197.746472,142.211122 201.345041,131.34465 201.345041,121.980878 L201.345041,121.980878 Z M129.42361,137.068228 L96.6056585,232.43135 C106.404423,235.31187 116.76722,236.887415 127.50465,236.887415 C140.242211,236.887415 152.457366,234.685398 163.827512,230.68722 C163.534049,230.218927 163.267642,229.721496 163.049106,229.180358 L129.42361,137.068228 L129.42361,137.068228 Z M223.481756,75.0225691 C223.95213,78.5066667 224.218537,82.2467642 224.218537,86.2699187 C224.218537,97.3694959 222.145561,109.846894 215.901659,125.448325 L182.490537,222.04774 C215.00878,203.085008 236.881171,167.854829 236.881171,127.502569 C236.883252,108.485724 232.025496,90.603187 223.481756,75.0225691 L223.481756,75.0225691 Z M127.50465,0 C57.2003902,0 0,57.1962276 0,127.500488 C0,197.813073 57.2003902,255.00722 127.50465,255.00722 C197.806829,255.00722 255.015545,197.813073 255.015545,127.500488 C255.013463,57.1962276 197.806829,0 127.50465,0 L127.50465,0 Z M127.50465,249.162927 C60.4243252,249.162927 5.84637398,194.584976 5.84637398,127.500488 C5.84637398,60.4201626 60.4222439,5.84637398 127.50465,5.84637398 C194.582894,5.84637398 249.156683,60.4201626 249.156683,127.500488 C249.156683,194.584976 194.582894,249.162927 127.50465,249.162927 L127.50465,249.162927 Z"></path>
-                                </g>
-                            </svg>Wordpress </p>
+                    <div class="ligne_2 flex_row ">
+                        <p><i class="fab fa-elementor work_icon"></i>Elementor</p>
+                        <p><i class="fab fa-wordpress work_icon"></i>Wordpress </p>
                     </div>
                 </div>
             </div>
@@ -188,23 +183,22 @@
                     <a href="https://digital-africa.co/"><img src="img/works/digitalafrica.png" alt="Capture du site Digital Africa"></a>
                 </div>
                 <div class="box_text">
-                    <div class="ligne_1">
+                    <div class="ligne_1 flex_row">
                         <div class="text_ligne1">
                             <p>Client: Digital africa</p>
                             <p><a href="https://digital-africa.co/">Site : https://digital-africa.co/</a></p>
                         </div>
                         <div class="badge">
-
+                            <div class="pays">
+                                <img src="img/svg_pays/france.svg" alt="logo pays suisse"> 
+                                <span class="nom_pays">FRANCE</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="ligne_2">
-                        <p><img src="/img/svg/" alt="logo elementor"> Elementor</p>
-                        <p><svg width="1em" height="1em" viewBox="0 0 256 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                            <g fill="white">
-                                <path d="M18.1239675,127.500488 C18.1239675,170.795707 43.284813,208.211252 79.7700163,225.941854 L27.5938862,82.985626 C21.524813,96.5890081 18.1239675,111.643057 18.1239675,127.500488 L18.1239675,127.500488 Z M201.345041,121.980878 C201.345041,108.462829 196.489366,99.1011382 192.324683,91.8145041 C186.780098,82.8045528 181.583089,75.1745041 181.583089,66.1645528 C181.583089,56.1097886 189.208976,46.7501789 199.950569,46.7501789 C200.435512,46.7501789 200.89548,46.8105366 201.367935,46.8375935 C181.907772,29.0091707 155.981008,18.1239675 127.50465,18.1239675 C89.2919675,18.1239675 55.6727154,37.7298211 36.1147317,67.4258211 C38.6809756,67.5028293 41.0994472,67.5569431 43.1536911,67.5569431 C54.5946016,67.5569431 72.3043902,66.1687154 72.3043902,66.1687154 C78.2007154,65.8211382 78.8958699,74.4814309 73.0057886,75.1786667 C73.0057886,75.1786667 67.0803252,75.8759024 60.4867642,76.2213984 L100.318699,194.699447 L124.25574,122.909138 L107.214049,76.2172358 C101.323967,75.8717398 95.744,75.1745041 95.744,75.1745041 C89.8497561,74.8290081 90.540748,65.8169756 96.4349919,66.1645528 C96.4349919,66.1645528 114.498602,67.5527805 125.246439,67.5527805 C136.685268,67.5527805 154.397138,66.1645528 154.397138,66.1645528 C160.297626,65.8169756 160.990699,74.4772683 155.098537,75.1745041 C155.098537,75.1745041 149.160585,75.8717398 142.579512,76.2172358 L182.107577,193.798244 L193.017756,157.340098 C197.746472,142.211122 201.345041,131.34465 201.345041,121.980878 L201.345041,121.980878 Z M129.42361,137.068228 L96.6056585,232.43135 C106.404423,235.31187 116.76722,236.887415 127.50465,236.887415 C140.242211,236.887415 152.457366,234.685398 163.827512,230.68722 C163.534049,230.218927 163.267642,229.721496 163.049106,229.180358 L129.42361,137.068228 L129.42361,137.068228 Z M223.481756,75.0225691 C223.95213,78.5066667 224.218537,82.2467642 224.218537,86.2699187 C224.218537,97.3694959 222.145561,109.846894 215.901659,125.448325 L182.490537,222.04774 C215.00878,203.085008 236.881171,167.854829 236.881171,127.502569 C236.883252,108.485724 232.025496,90.603187 223.481756,75.0225691 L223.481756,75.0225691 Z M127.50465,0 C57.2003902,0 0,57.1962276 0,127.500488 C0,197.813073 57.2003902,255.00722 127.50465,255.00722 C197.806829,255.00722 255.015545,197.813073 255.015545,127.500488 C255.013463,57.1962276 197.806829,0 127.50465,0 L127.50465,0 Z M127.50465,249.162927 C60.4243252,249.162927 5.84637398,194.584976 5.84637398,127.500488 C5.84637398,60.4201626 60.4222439,5.84637398 127.50465,5.84637398 C194.582894,5.84637398 249.156683,60.4201626 249.156683,127.500488 C249.156683,194.584976 194.582894,249.162927 127.50465,249.162927 L127.50465,249.162927 Z"></path>
-                            </g>
-                        </svg>Wordpress </p>
+                    <div class="ligne_2 flex_row">
+                        <p><i class="fab fa-elementor work_icon"></i>Elementor</p>
+                        <p><i class="fab fa-wordpress work_icon"></i>Wordpress </p>
                     </div>
                 </div>
             </div>
@@ -347,25 +341,26 @@
 <!-- _________________________________________ Travail sur la section5______________________________-->
     <section class="grey_section" id="section5">
         <h1 class="titre_noir">Notre expertise</h1>
-        <div id="line_box">
+
+        <div id="line_box" class="flex_row">
             <div class="tableaux" id="tableau_1">
                 <div id="tableau1_head">
                     <h3>Hardskills</h3>
                 </div>
                 <div id="tableau1_body">
-                    <div class="logo_svg">
+                    <div class="logo_svg flex_row">
                         <figure><img src="img/svg/html5.svg" alt="logo HTML"><figcaption>HTML</figcaption> </figure>
                         <figure><img src="img/svg/css.svg" alt="logo css"><figcaption>CSS</figcaption></figure>
                         <figure><img src="img/svg/php.svg" alt="logo php"><figcaption>PHP</figcaption></figure>
                         <figure><img src="img/svg/laravel.svg" alt="logo laravel"><figcaption>Laravel</figcaption></figure>
                     </div>
-                    <div class="logo_svg">
+                    <div class="logo_svg flex_row">
                         <figure><img src="img/svg/nodejs.svg" alt="logo node.js"><figcaption>Node.Js</figcaption></figure>
                         <figure><img src="img/svg/javascript.svg" alt="logo javascript"><figcaption>JavaScript</figcaption></figure>
                         <figure><img src="img/svg/vuejs.svg" alt="logo vue.js"><figcaption>Vue.Js</figcaption></figure>
                         <figure><img src="img/svg/reactjs.svg" alt="logo react"><figcaption>React</figcaption></figure>
                     </div>
-                    <div class="logo_svg">
+                    <div class="logo_svg flex_row">
                         <figure><img src="img/svg/mysql.svg" alt="logo mysql"><figcaption>MySQL</figcaption></figure>
                         <figure><img src="img/svg/mongodb.svg" alt="logo mongodb"><figcaption>MongoDB</figcaption></figure>
                         <figure><img src="img/svg/neo4j.svg" alt="logo neo4j"><figcaption>Neo4j</figcaption></figure>
@@ -398,10 +393,10 @@
     <section class="pink_section" id="section6">
         <h1 class="titre_blanc">Prêt ?</h1>
         <div id="pret_illustration">
-            <div id="alignement_icon_pret">
+            <div id="alignement_icon_pret" class="flex_row">
 
                 <div class="pret_icon">
-                    <div class="image_fleche">
+                    <div class="image_fleche flex_row">
                         <div class="icon_container">
                             <img src="img/illustrations/call.png" alt="Appel d’introduction">
                         </div>
@@ -412,7 +407,7 @@
                     <h4>Appel d’introduction</h4>
                 </div>
                 <div class="pret_icon">
-                    <div class="image_fleche">
+                    <div class="image_fleche flex_row">
                         <div class="icon_container">
                             <img src="img/illustrations/users.png" alt="Appel d’introduction">
                         </div>
@@ -423,7 +418,7 @@
                     <h4>Proposition de profils</h4>
                 </div>
                 <div class="pret_icon">
-                    <div class="image_fleche">
+                    <div class="image_fleche flex_row">
                         <div class="icon_container">
                             <img src="img/illustrations/call.png" alt="Appel d’introduction">
                         </div>
@@ -434,7 +429,7 @@
                     <h4>Interviews vidéo</h4>
                 </div>
                 <div class="pret_icon">
-                    <div class="image_fleche">
+                    <div class="image_fleche flex_row">
                         <div class="icon_container">
                             <img src="img/illustrations/user_group.png" alt="Appel d’introduction">
                         </div>
@@ -451,11 +446,11 @@
     <section class="grey_section" id="section7">
         <div id="create_emploi">
             <div class="emploi_all" id="emploi_1">
-                <h1 class="titre_left" >Nous créons de l'<span>emploi de qualité</span> en République Démocratique du Congo</h1>
+                <h1 class="titre_noir titre_left" >Nous créons de l'<span>emploi de qualité</span> en République Démocratique du Congo</h1>
                 <p>Nous sommes fiers de vus proposer un service de qualité qui permet de créer des emlois pour les talents de la RDC en offrant une formation d'excellenceà des nouveaux jeunes développeurs chaque année</p>
                 <p><img src="img/students.png" alt="Apprenants de la Kinshasa Digital Academy"></p>
             </div>
-            <div class="emploi_all" id="emploi_2">
+            <div class="emploi_all flex_row" id="emploi_2">
                 <div class="emploi2_bloc">
                     <p><img src="img/illustrations/salary.png" alt="Icône salaire"></p>
                     <h3>Rémuneration ultra compétitive</h3>
@@ -482,7 +477,7 @@
 <!-- _______________________________________Travail sur la section 8 __________________________ -->
     <section id="section8">
         <h1 class="titre_blanc">Kinshasa Digital dans les médias</h1>
-        <div id="img_media">
+        <div id="img_media" class="flex_row">
             <div class="logo_media"><img src="img/medias/jeuneafr.png" alt="logo jeune afrique"></div>
             <div class="logo_media"><img src="img/medias/detijd.png" alt="logo detijd"></div>
             <div class="logo_media"><img src="img/medias/frb.png" alt="logo fondation roi baudouin"></div>
@@ -494,8 +489,8 @@
 <!-- ___________________________________________Travail sur la section 9 _____________________________________________ -->
     <section class="grey_section" id="section9">
         <h1 class="titre_noir">Ils nous soutiennent</h1>
-        <div id="soutien_kda">
-            <div class="soutien_img">
+        <div id="soutien_kda" class="flex_column">
+            <div class="soutien_img flex_row">
             <div class="soutien_img_bloc">
                 <div><img src="img/kda-avec-le-president-felix-antoine-tshisekedi.jpg" alt="kinshasa digital academy et le Président Félix Antoine Tshisekei"></div>
                 <p>Présentation au <strong>Président Félix Antoine Tshisekedi</strong> et soutien de la Présidence.</p>
@@ -514,7 +509,7 @@
             </div>
             </div>
 
-            <div class="soutien_twitter">
+            <div class="soutien_twitter flex_row">
                 <div class="soutien_twitter_bloc">
                     <blockquote class="twitter-tweet"><p lang="nl" dir="ltr">🇧🇪🇨🇩Ochtendlijk bezoek aan nieuwe <a href="https://twitter.com/KinshasaDigital?ref_src=twsrc%5Etfw">@KinshasaDigital</a> Academy. <br><br>Hier ging vorige week eerste groep jongeren van start met intensieve coding opleiding. Digitale transformatie ook voor <a href="https://twitter.com/hashtag/DRC?src=hash&amp;ref_src=twsrc%5Etfw">#DRC</a> bron van kansen en groei. <a href="https://t.co/IFBla5uCpJ">pic.twitter.com/IFBla5uCpJ</a></p>&mdash; Alexander De Croo (@alexanderdecroo) 
                         <a href="https://twitter.com/alexanderdecroo/status/1225325626791530496?ref_src=twsrc%5Etfw">February 6, 2020</a>
@@ -539,16 +534,15 @@
     <section id="section10">
         <div id="formulaire" class="placeholder">
         <h1 class="titre_blanc">Formulaire de contact</h1>
-        <p>Si vous souhaitez vous préinscrire à la Kinshasa Digital Academy veuillez repmplir le <a href="#">formulaire de préinscription</a>.</p>
-            Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le 
-        <form action="">
+        <p>Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le <a href="#"> formulaire de préinscription</a>.</p>
+        <form action="kda.php" method="post">
             
-                <div id="formulaire_colonne">
+                <div id="formulaire_colonne" class="flex_row">
                     
                     <fieldset class="colonne">
                         <legend>Quel titre vous décrit le mieux ?</legend>
-                        <p><select name="Titre" id="">
-                            <option value=""></option>
+                        <p><select name="Titre" >
+                            <option value=" "> </option>
                             <option value="Consultant">Consultant</option>
                             <option value="Entrepreneur">Entrepreneur</option>
                             <option value="Etudiant">Etudiant</option>
@@ -566,8 +560,8 @@
                 
                     <fieldset class="colonne">
                         <legend>Secteur d'activité</legend>
-                        <p><select name="Secteur" id="">
-                            <option value=""></option>
+                        <p><select name="Secteur" >
+                            <option value=" "> </option>
                             <option value="Agriculture">Agriculture et Foresterie</option>
                             <option value="Aéroport">Aéroport</option>
                             <option value="Construction">Construction</option>
@@ -599,8 +593,8 @@
             
             <fieldset>
                 <legend>Type de demande</legend>
-                <p><select name="" id="">
-                    <option value=""></option>
+                <p><select name="demande" >
+                    <option value=" "> </option>
                     <option value="site internet">Développement : site internet</option>
                     <option value="">Développement : Apllication mobile</option>
                     <option value="">Développement : Application de geestion</option>
@@ -614,7 +608,7 @@
                     <option value="">Autre</option>
 
                 </select></p>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Demande :Merci d'indiquer le maximum de précision afin qu'on puisse vous donner une reponse complète"></textarea>
+                <textarea name="more_info"  cols="30" rows="10" placeholder="Demande :Merci d'indiquer le maximum de précision afin qu'on puisse vous donner une reponse complète"></textarea>
             </fieldset>
             <p class="form_last_p">
                 Dû à un nombre important de demandes, nous ne traiterons pas les messages concernant les inscriptions à KDA, inscrivez-vous à l’aide du <a href="#">formulaire</a>.</p>
@@ -626,7 +620,7 @@
     </section>
 <!-- ________________________________________ footer _____________________________________________________________-->
     <footer>
-        <div class="flex_linge">
+        <div class="flex_ligne flex_row">
             <div class="adresse">
                 <address>
                     <strong>Kinshasa Digital</strong><br>
@@ -637,20 +631,22 @@
                     République Démocratique du Congo <br>
                 </address>
                 <p>
-                <a href="mailto:info@kinshasadigital.com">info@kinshasadigital.com</a> <br>
-                <a href="tel:+243 891 341 236">+243 891 341 236</a> <br>
+                <a class="info_kda" href="mailto:info@kinshasadigital.com">info@kinshasadigital.com</a> <br>
+                <a class="info_kda" href="tel:+243891341236">+243 891 341 236</a> <br>
                 </p>
                 <div class="adresse_img">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.078em" height="2.2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 486.037 1000"><path d="M124.074 1000V530.771H0V361.826h124.074V217.525C124.074 104.132 197.365 0 366.243 0C434.619 0 485.18 6.555 485.18 6.555l-3.984 157.766s-51.564-.502-107.833-.502c-60.9 0-70.657 28.065-70.657 74.646v123.361h183.331l-7.977 168.945H302.706V1000H124.074" fill="#D92950"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2.2em" height="2.2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692 0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003z" fill="#D92950"/></g></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2.2em" height="2.2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388zm-5.5 10.403h3.208V9.25H4.208v10.54zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0z" fill="#D92950"/></g></svg>
+                    <a href=""><i class="fab fa-facebook-f adresse_icon"></i></a>
+                    <a href=""> <i class="fab fa-twitter adresse_icon"></i></a>
+                    <a href=""> <i class="fab fa-linkedin adresse_icon"></i></a>
+
+                   
                 </div>
             </div>
             <div class="inscription">
                 <p>
                     Inscrivez-vous à notre <strong>newsletter</strong> pour vous tenir au courant de nos activités.
                 </p>
-                <form action="" class="placeholder">
+                <form action="kda.php" class="placeholder" method="post">
                     <input type="email" placeholder="Adresse E-mail"><button>S'INSCRIRE</button>
                 </form>
                 <p><a href="#">Mentions légales</a></p>

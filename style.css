@@ -18,7 +18,22 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-
+.flex_row{
+    display: flex;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.flex_center{
+    justify-content: center;
+}
+.flex_around{
+    justify-content: space-around;
+}
+.flex_between{
+    justify-content: space-between;
+}
 /* parametrage par défaut de différentes sections, textes, couleurs, marges*/
 .grey_section{
     background-color: #f1f0f3; 
@@ -46,36 +61,26 @@ body {
     font-size: 2.5em;
 }
 .titre_left{
-    font-style: normal;
-    color: #424345;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2.5em;
+    text-align: left;
 }
 p{
     font-family: 'Montserrat', sans-serif;
     font-weight:400 ;
 }
+
 /* Travail sur le header soit la section 0*/
 header{
-    display: flex;
-    flex-direction: column;
     margin-top: 80px;
-
 }
 /* Redimensionnement du logo*/
 #logo{
     margin-left: 15%;
     margin-top: 10%;
-    width: 100px;
+    width: 6vw;
 
 }
 /*travail sur la barre de navigation, fixation et autre*/
 #navigation{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background: #d92950;
     position: fixed;
     top: 0;
@@ -87,8 +92,6 @@ header{
 }
 /* bloc de liste*/
 nav ol{
-    display: flex;
-    flex-direction: row ;
     margin-top: 7%;  
 }
 
@@ -107,8 +110,11 @@ nav li a{
     color: #FFFFFF;
     text-decoration: none;
 }
-/** --------- ici sera placé la pseudo classe active pour le lien ---------/
-
+/** --------- ici sera placé la pseudo classe active pour le lien --------- */
+nav li:active{
+    border-bottom: 2.5px solid rgba(255,4,107,1);
+}
+}
 /*  la pseudo classe hover des listes*/
 nav li:hover{
     border-bottom: 2.5px solid rgba(255,4,107,1);
@@ -116,8 +122,7 @@ nav li:hover{
 
 /* travail sur le bloc central (h1, bouton et logos */
 #head_center{ /* image de fond et dimensionnement*/
-    display: flex;
-    flex-direction: column;
+    
     align-items: center;
     height: 110vh;
     background-image: url(img/hero-background.jpg) ;
@@ -144,18 +149,16 @@ nav li:hover{
 
 /* travail sur les deux touches de contact*/
 #head_center ol{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
     margin-top: 5%; 
     width: 40%;
     height: auto;
- 
+    
 }
 
 /* modification du style de liste*/
 #head_center li{
     list-style: none;
+    padding: 10px;
 }
 
 /* création du bouton*/
@@ -195,8 +198,6 @@ nav li:hover{
 
 /* logo technos*/
 #head_logos{
-    display: flex;
-    justify-content: space-around;
     width: 85%;
     margin-top : 3.7%;
     margin-bottom: 8%;
@@ -212,8 +213,6 @@ nav li:hover{
 /*-------------------------------------------------------------------------------------------------------------------*/
 /*Prmière section*/
 #section1{
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     height: auto;
     padding-top: 7%;
@@ -259,8 +258,6 @@ nav li:hover{
 }
 /* groupe des 4 illustrations developpeurs */
 .quality_dev_illustration_group{
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -284,17 +281,12 @@ nav li:hover{
 
 /* --------------------------------------------------Deuxième section ------------------------------------------------ */
 #section2{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    height: auto;
     padding: 100px 0;
  }
  /*travail sur la div des images*/
  #partner_img{
-    display: flex;
     width: 70vw;
-    justify-content: space-around;
     align-items: center;
     margin: 70px 0; 
  }
@@ -312,8 +304,6 @@ nav li:hover{
  }
 
  #accompagnement{
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
 
 }
@@ -341,7 +331,9 @@ nav li:hover{
      font-weight: 700;
      margin: 20px 0px;
  }
-
+ #section3 h1{
+     color: #341F41;
+ }
  .accompagnement_texte p:nth-child(2){
      text-align: center;
   
@@ -391,8 +383,6 @@ nav li:hover{
 }
 
 #section4_slide{
-    display: flex;
-    justify-content: space-around;
     width: 70vw;
     margin: auto;
     /*overflow : scroll;*/
@@ -415,7 +405,6 @@ nav li:hover{
 }
 .box_image .ligne_1{
     font-size: 0.7em;
-    display: flex;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-weight:400 ;
@@ -423,11 +412,30 @@ nav li:hover{
   
     
 }
+.pays{
+    background-color: #fff;
+    width: 90px;
+    height: 22px;
+    border-radius: 10px 0px 0px 10px;
+    padding-bottom: 2px;
+    position: relative;
+}
+.ligne_1 img{
+    width: 20px;
+    margin-left: 0.5px;
+    margin-top: 0.5px;
+}
+.nom_pays{
+    color :#D92950;
+    position: absolute;
+    right: 15px;
+    top: 4px;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 700;
+}
 .box_image .ligne_2{
     background-color: #ED0058;
     font-size: 0.7em;
-    display: flex;
-    justify-content: flex-start;
     padding: 5px;
     font-family: "Ubuntu Mono", monospace;
     
@@ -435,8 +443,10 @@ nav li:hover{
 .ligne_2 p{
     margin-right:10px;
 }
-.ligne_2 svg{
+.work_icon{
     margin-right: 5px;
+    color: #fff;
+    font-size: 1em;
 }
 .ligne_1, .ligne_2{
     margin: 10px 0;
@@ -449,10 +459,8 @@ nav li:hover{
     padding: 100px 0;
 }
 #line_box{
-    display: flex;
     justify-content: center;
     width: 100vw;
-
     margin-top: 50px;
 }
 .tableaux{
@@ -482,7 +490,6 @@ nav li:hover{
     border-radius: 0 0 20px 20px;
 }
 .logo_svg{
-    display: flex;
     justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 25px;
@@ -538,7 +545,6 @@ nav li:hover{
     width: 100vw;
 }
 #alignement_icon_pret{
-    display: flex;
     justify-content: space-around;
     width: 80vw;
     margin: auto;
@@ -562,7 +568,6 @@ nav li:hover{
     
 }
 .image_fleche{
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -633,7 +638,7 @@ nav li:hover{
     width: 100%;
 }
 
-#emploi_1 p:last-child{
+#emploi_1 p{
     margin-top: 30px;
 }
 #emploi_1 span{
@@ -642,7 +647,6 @@ nav li:hover{
 
 #emploi_2{
     width: 40vw;   
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
@@ -673,7 +677,6 @@ nav li:hover{
     width: 100vw;
 }
 #img_media{
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -689,18 +692,12 @@ nav li:hover{
 }
 
 #soutien_kda{
-    display: flex;
     align-items: center;
-    flex-direction: column;
     width: 80vw;
     margin: auto;
     margin-top: 50px;
     
  
-}
-.soutien_img, .soutien_twitter{
-    display: flex;
-
 }
 .soutien_img_bloc,.soutien_twitter_bloc {
     width: 280px;
@@ -744,11 +741,23 @@ nav li:hover{
 
 #formulaire input, select, textarea{
     padding-left: 10px;
-    font-family: 'Roboto', sans-serif;   
+    font-family: 'Roboto', sans-serif;  
+    color : #757575; 
 
 }
+select{
+    appearance: none;
+    background-image: url(img/svg/double-arrow-svgrepo-com.svg);
+    background-size: .7em;
+    background-position: calc(100% - 1em) center;
+    background-repeat: no-repeat;
+}
+select::-ms-expand {
+  display: none;
+}
 textarea{
-    padding-top: 20px;
+    padding-top: 10px;
+    height: 20px ;
 }
 .placeholder ::placeholder,#formulaire option { 
     font-family: 'Roboto', sans-serif;
@@ -777,7 +786,6 @@ textarea{
 }
 #formulaire_colonne{
     margin: 20px 0;
-    display: flex;
     width: 100%;
     
     justify-content: space-between;
@@ -786,6 +794,8 @@ textarea{
     width: 100%;
     height: 40px;
     margin: 8px 0;
+    font-family: 'Roboto', sans-serif;
+    
 }
 textarea{
     width: 100%;
@@ -797,6 +807,7 @@ input:focus, select:focus, textarea:focus{
  
     
 }
+
 #section10 a{
     color: #D92950;
     text-decoration: none;
@@ -829,11 +840,10 @@ footer{
     background: #2D2D2D;
     color: #fff;
 }
-.flex_linge{
-    display: flex;
+.flex_ligne{
     justify-content: center;
     width: 85vw;
-    margin: auto;
+    margin: 70px auto;
 }
 .adresse, .inscription{
     padding: 0 15px;
@@ -845,8 +855,9 @@ address{
     font-size: 1.6em ;
     margin: 0 0 32px;
     line-height: 1.3em;
+    color: rgba(250, 250, 250, 0.9)
 }
-.adresse a{
+.adresse .info_kda{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 1.6em ;
@@ -854,18 +865,21 @@ address{
     text-decoration: none;
     line-height: 1.3em;
 }
-.adresse_img{
-    margin: 40px 0px 0px ;  
 
-}
-.adresse svg{
-    margin-right: 20px ;
+.adresse_icon{
+    color: #d92950 ;
+    font-size: 2.2em;
+    margin: 60px 25px 0 0;
 }
 
 .inscription p:nth-of-type(1){
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6em;
     margin: 0 0 25px;
+    color: rgba(250, 250, 250, 0.9)
+}
+.flex_ligne strong{
+    color: #fff;
 }
 .inscription input{
     height: 60px;
@@ -886,8 +900,12 @@ address{
     padding: 15px 25px;
     font-size: 1.05em;
     border: none;
-    
     position: absolute;
+}
+.inscription button:hover{
+    background: none;
+    color:#1B0628;
+    transition: 0.3s;
 }
 
 .inscription form{
@@ -901,3 +919,12 @@ address{
     color: #fff;
 }
 
+.adresse .info_kda:hover, .fab:hover{
+    border-bottom: 2px solid #FF046B;
+    color: #FF046B;
+    padding-bottom: 2px;
+}
+.inscription a:hover{
+    border-bottom: 2px solid #FF046B;
+    padding-bottom: 2px;
+}

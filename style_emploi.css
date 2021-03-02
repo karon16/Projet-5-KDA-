@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Parametrage du body*/
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+/* parametrage par défaut de différentes sections, textes, couleurs, marges*/
+.grey_section{
+    background-color: #f1f0f3; 
+    color: #424345;
+}
+.titre_blanc{
+    font-style: normal;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5em;
+} 
+.titre_noir{
+    font-style: normal;
+    color: #424345;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 80px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400 ;
+}
+/*travail sur la barre de navigation, fixation et autre*/
+#logo{
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 100px;
+
+}
+#navigation{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #d92950;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+    width: 100vw;
+    height: 80px;   
+    /* margin-bottom: 80px; */
+}
+nav ol{
+    display: flex;
+    flex-direction: row ;
+    margin-top: 7%;  
+}
+nav li{
+    margin-right: 50px;
+    list-style: none;   
+}
+nav li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    font-weight: bold; 
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav li:active{
+    border-bottom: 2.5px solid rgba(255,4,107,1);
+}
+nav li:hover{
+    border-bottom: 2.5px solid rgba(255,4,107,1);
+}
+/* ________________________________ */
+#section_1{4
+    width: 100vw;
+    margin-top: 80px;
+    padding: 100px 0;
+    
+}
+
+#offre{
+    display: flex;
+    width: 85vw;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.type_offre{
+    
+    width : 32%;
+    margin-bottom: 30px;
+    background: #F1F0F3;
+    padding: 30px;
+    border-radius: 15px;
+    
+}
+.type_offre h4{
+    font-family: 'montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.type_offre p{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.type_offre a{
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #d92950;
+}
+
+/* ____________________________________________________________ Formulaire _______________________________________________________*/
+#section10{
+    padding: 100px 0;
+    background: #1D1B25;
+    color: white;
+}
+#section10 #formulaire{
+    width: 75vw;
+    margin: auto;
+}
+#section10 fieldset{
+    border: none;
+    color: rgba(250, 250, 250, 0.9);
+
+}
+#section10 legend{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 8px;
+}
+#formulaire > p:nth-of-type(1){
+    font-weight: 700;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#formulaire input, select, textarea{
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;  
+    color : #757575; 
+
+}
+select{
+    appearance: none;
+    background-image: url(img/svg/double-arrow-svgrepo-com.svg);
+    background-size: .7em;
+    background-position: calc(100% - 1em) center;
+    background-repeat: no-repeat;
+}
+select::-ms-expand {
+  display: none;
+}
+textarea{
+    padding-top: 10px;
+    height: 20px ;
+}
+.placeholder ::placeholder,#formulaire option { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+  
+  }
+  
+  .placeholder :-ms-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+  
+  }
+  .placeholder ::-ms-input-placeholder { 
+    font-family: 'Roboto', sans-serif;   
+    font-size: 1.2em;
+}
+.form_last_p{
+    line-height: 1.5em;
+    color: rgba(250, 250, 250, 0.9);
+}
+
+
+#section10 .colonne{
+    width: 49%;
+    
+}
+#formulaire_colonne{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-between;
+}
+#section10 input:not(.envoie), select{
+    width: 100%;
+    height: 40px;
+    margin: 8px 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+textarea{
+    width: 100%;
+    height: 60px;
+    margin: 8px 0;
+}
+input:focus, select:focus, textarea:focus{
+    outline: 3px solid rgba(217, 41, 80, 0.3);
+ 
+    
+}
+
+#section10 a{
+    color: #D92950;
+    text-decoration: none;
+}
+#section10 a:hover{
+    border-bottom: 2.5px solid #D92950 ;
+}
+#formulaire button{
+    color: #FFF;
+    background-color: #d92950;
+    border-radius: 15px;
+    text-transform: uppercase ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 25px;
+    border: 2px solid #31052C ;
+    font-size: 1.05em;
+    margin-top: 20px;
+    
+}
+#formulaire button:hover{
+    background: transparent;
+    transition: 0.3s;
+    border: 2px solid #d92950 
+}
+/* _______________________________________________________ bas de page ___________________________________________________________*/
+footer{
+    padding: 100px 0;
+    background: #2D2D2D;
+    color: #fff;
+}
+.flex_ligne{
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    margin: 70px auto;
+}
+.adresse, .inscription{
+    padding: 0 15px;
+    width: 50%;
+}
+address{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1.6em ;
+    margin: 0 0 32px;
+    line-height: 1.3em;
+    color: rgba(250, 250, 250, 0.9)
+}
+.adresse .info_kda{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1.6em ;
+    color: #d92950;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+
+.adresse_icon{
+    color: #d92950 ;
+    font-size: 2.2em;
+    margin: 60px 25px 0 0;
+}
+
+.inscription p:nth-of-type(1){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    margin: 0 0 25px;
+    color: rgba(250, 250, 250, 0.9)
+}
+.flex_ligne strong{
+    color: #fff;
+}
+.inscription input{
+    height: 60px;
+    width: 70%;
+    padding-left : 10px;
+}
+.inscription input:focus{
+    outline: 3px solid rgba(217, 41, 80, 0.3);
+}
+.inscription button{
+    height: 60px;
+    color: #FFF;
+    background-color: #d92950;
+    border-radius: 0px 15px 15px 0px;
+    text-transform: uppercase ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 15px 25px;
+    font-size: 1.05em;
+    border: none;
+    position: absolute;
+}
+.inscription button:hover{
+    background: none;
+    color:#1B0628;
+    transition: 0.3s;
+}
+
+.inscription form{
+    margin-bottom: 230px;
+}
+
+.inscription a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.adresse .info_kda:hover, .fab:hover{
+    border-bottom: 2px solid #FF046B;
+    color: #FF046B;
+    padding-bottom: 2px;
+}
+.inscription a:hover{
+    border-bottom: 2px solid #FF046B;
+    padding-bottom: 2px;
+}
