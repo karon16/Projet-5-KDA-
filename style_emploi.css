@@ -66,6 +66,9 @@ nav li{
     margin-right: 50px;
     list-style: none;   
 }
+nav .current{
+    border-bottom: 2.5px solid rgba(255,4,107,1);
+}
 nav li a{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;

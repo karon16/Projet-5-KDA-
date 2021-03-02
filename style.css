@@ -88,6 +88,9 @@ header{
     width: 100vw;
     height: 80px;   
 }
+nav .current{
+    border-bottom: 2.5px solid rgba(255,4,107,1);
+}
 /* bloc de liste*/
 nav ol{
     margin-top: 7%;  
