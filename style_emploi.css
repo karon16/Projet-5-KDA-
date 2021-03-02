@@ -12,7 +12,7 @@ body {
 /* parametrage par défaut de différentes sections, textes, couleurs, marges*/
 .grey_section{
     background-color: #f1f0f3; 
-    color: #424345;
+    color: black;
 }
 .titre_blanc{
     font-style: normal;
@@ -24,7 +24,7 @@ body {
 } 
 .titre_noir{
     font-style: normal;
-    color: #424345;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 700;
@@ -81,7 +81,7 @@ nav li:hover{
     border-bottom: 2.5px solid rgba(255,4,107,1);
 }
 /* ________________________________ */
-#section_1{4
+#section_1{
     width: 100vw;
     margin-top: 80px;
     padding: 100px 0;
@@ -90,7 +90,7 @@ nav li:hover{
 
 #offre{
     display: flex;
-    width: 85vw;
+    width: 80vw;
     margin: auto;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -104,25 +104,26 @@ nav li:hover{
     padding: 30px;
     border-radius: 15px;
     
+    
 }
 .type_offre h4{
     font-family: 'montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     margin-bottom: 15px;
 }
 .type_offre p{
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 .type_offre a{
     font-family: 'roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
     text-decoration: none;
     color: #d92950;
+    font-size: 1.1em;
 }
 
 /* ____________________________________________________________ Formulaire _______________________________________________________*/
