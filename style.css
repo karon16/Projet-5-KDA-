@@ -18,6 +18,7 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
 .flex_row{
     display: flex;
 }
@@ -131,7 +132,7 @@ nav li:hover{
 #head_center h1{
     width: 50%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
+    font-size: 5em;
     color: #FFFFFF;
     margin-top: 7%;
     text-align: center;
@@ -197,7 +198,7 @@ nav li:hover{
     opacity: 0.5;
 }
 /*-------------------------------------------------------------------------------------------------------------------*/
-/*Prmière section*/
+/*Première section*/
 #section1{
     width: 100%;
     height: auto;
@@ -222,7 +223,7 @@ nav li:hover{
     width: 65%;
     border-radius: 20px;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 35%;
 }
 /* div principal illustrtion developpeurs*/
@@ -255,7 +256,8 @@ nav li:hover{
 .quality_dev_icons{
     width: 50px;
     border-bottom: 2px solid red;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* --------------------------------------------------Deuxième section ------------------------------------------------ */
@@ -476,9 +478,9 @@ nav li:hover{
 }
 #tableau2_body{
     padding: 40px 30px; 
-    padding-bottom: 50px ;
+
     font-family: "Ubuntu Mono", monospace;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 400;
 }
 #tableau2_body ol{
@@ -505,11 +507,13 @@ nav li:hover{
 #alignement_icon_pret{
     width: 80vw;
     margin: auto;
-    margin-top: 30px;   
+    margin-top: 30px; 
+ 
 }
 .pret_icon{
     margin: 20px;
-    width: 300px;    
+    width: 300px; 
+   
 }
 .pret_icon h4{
 
@@ -519,10 +523,12 @@ nav li:hover{
     font-size: 1.2em;
     font-weight: 700;
     font-style: normal; 
+
 }
 .image_fleche{
     align-items: center;
     margin-bottom: 20px; 
+    
 }
 .icon_container{
     width: 70px ;
@@ -570,6 +576,7 @@ nav li:hover{
     padding: 100px 30px ;
     width: 100vw;
 }
+
 #emploi_1{
     width: 38vw;
 }
@@ -587,6 +594,7 @@ nav li:hover{
 #emploi_2{
     width: 40vw;   
     flex-wrap: wrap;
+    
 }
 .emploi2_bloc{
     width: 42%;
@@ -675,6 +683,9 @@ nav li:hover{
     font-family: 'Roboto', sans-serif;  
     color : #757575; 
 
+}
+.hidden_option{
+   display: none;
 }
 select{
     appearance: none;
