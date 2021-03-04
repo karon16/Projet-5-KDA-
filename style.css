@@ -64,6 +64,7 @@ body {
 .titre_left{
     text-align: left;
 }
+
 p{
     font-family: 'Montserrat', sans-serif;
     font-weight:400 ;
@@ -201,29 +202,34 @@ nav li:hover{
 /*Première section*/
 #section1{
     width: 100%;
-    height: auto;
-    padding-top: 7%;
-    padding-bottom: 15%;
-    height: auto;
+    padding-top: 110px  ;
+    padding-bottom: 110px;
+
+}
+.titre_dev{
+    font-size: 2.7em;
+    width: 90%;
+    margin-left: 15px;
 }
 /* div principal contenant les images*/
 #image_present{
     width: 40%;
     position: relative;
+
 }
 /* image texaf*/
 .img_texaf{
-    width: 100%;
+    width: 600px;
     border-radius: 20px;
     position: absolute;
     left: -15%;
 }
 /* image cohorte kda 2020 */
 .img_kda2020{
-    width: 65%;
+    width: 390px;
     border-radius: 20px;
     position: absolute;
-    top: 55%;
+    top: 40%;
     left: 35%;
 }
 /* div principal illustrtion developpeurs*/
@@ -233,7 +239,7 @@ nav li:hover{
 }
 
 #quality_dev h5{
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight:700 ;
@@ -251,13 +257,21 @@ nav li:hover{
     height: auto;
     text-align: center;
     margin-top: 40px;
+
+
 }
 /* travail sur les icones */
 .quality_dev_icons{
-    width: 50px;
+    width: 55px;
     border-bottom: 2px solid red;
     padding-bottom: 30px;
     margin-bottom: 20px;
+}
+.cup{
+    width: 45px;
+}
+.bloc_earth{
+    margin-bottom: 25px;
 }
 
 /* --------------------------------------------------Deuxième section ------------------------------------------------ */
@@ -306,7 +320,7 @@ nav li:hover{
      font-weight: 700;
      margin: 20px 0px;
  }
- #section3 h1{
+ #section3 h2{
      color: #341F41;
  }
  .accompagnement_texte p:nth-child(2){
@@ -342,7 +356,7 @@ nav li:hover{
     width: 100vw;
   
 }
-#section4 h1{
+#section4 h2{
     text-align: center;
     margin: 0px 0px 100px;  
 }
@@ -477,20 +491,21 @@ nav li:hover{
     padding: 20px 0;
 }
 #tableau2_body{
-    padding: 40px 30px; 
+    padding: 20px 30px; 
 
     font-family: "Ubuntu Mono", monospace;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 400;
 }
 #tableau2_body ol{
-    line-height: 2em;
+    line-height: 1.5em;
     list-style-position: inside;
+    width: 80%;
 }
 #tableau2_texte{
     background: #DFDEE1;
     padding: 50px 35px;
-    padding-bottom: 60px ;
+    padding-bottom: 50px ;
     border-radius: 10px;
 }
 
