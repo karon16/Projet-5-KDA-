@@ -130,7 +130,7 @@ nav li:active{
 }
 .underligne:hover::after{
     width: 100%;
-    //transition: width .3s;
+    transition: width .3s;
 }
 /*  la pseudo classe hover des listes*/
 /* nav li:hover{
