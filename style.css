@@ -115,11 +115,27 @@ nav li a{
 nav li:active{
     border-bottom: 2.5px solid rgba(255,4,107,1);
 }
+
+.underligne{
+    display: inline-block;
+}
+.underligne::after{
+    
+    width: 0;
+    display: block;
+    content: '';
+    height: 2px;
+    background-color: rgba(255,4,107,1);
+    transition: width .3s;
+}
+.underligne:hover::after{
+    width: 100%;
+    //transition: width .3s;
 }
 /*  la pseudo classe hover des listes*/
-nav li:hover{
+/* nav li:hover{
     border-bottom: 2.5px solid rgba(255,4,107,1);
-}
+} */
 /* travail sur le bloc central (h1, bouton et logos */
 #head_center{ /* image de fond et dimensionnement*/   
     align-items: center;
@@ -271,8 +287,12 @@ nav li:hover{
     width: 45px;
 }
 .bloc_earth{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
+/* .bloc_cup{
+    margin-bottom: 5px;
+
+} */
 
 /* --------------------------------------------------Deuxième section ------------------------------------------------ */
 #section2{
@@ -591,32 +611,49 @@ nav li:hover{
     padding: 100px 30px ;
     width: 100vw;
 }
-
+#create_emploi{
+    margin-left:15px;
+    
+}
 #emploi_1{
-    width: 38vw;
+    width: 42vw;
 }
 #emploi_1 img{
     width: 100%;
 }
 
-#emploi_1 p{
-    margin-top: 30px;
+#emploi_1 p:nth-of-type(1){
+    margin-top: 60px;
+    font-size: 1.15em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+   
 }
 #emploi_1 span{
     color: #D92950;
 }
-
+.titre_emploi{
+    font-size: 2.7em;
+    
+}
 #emploi_2{
-    width: 40vw;   
+    width: 45vw;   
     flex-wrap: wrap;
     
+    
+    
+}
+#emploi_2 p:last-child{
+    font-size: 1.05em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
 }
 .emploi2_bloc{
     width: 42%;
-    margin: 10px;
+    margin: 15px;
     border-radius: 20px;
     background: #FFF;
-    padding: 20px 20px;
+    padding: 20px 25px 50px 25px;
 }
 .emploi2_bloc img{
     width: 50px;
@@ -676,7 +713,7 @@ nav li:hover{
     color: white;
 }
 #section10 #formulaire{
-    width: 75vw;
+    width: 85vw;
     margin: auto;
 }
 #section10 fieldset{
@@ -692,6 +729,7 @@ nav li:hover{
     font-weight: 700;
     margin-top: 50px;
     text-align: center;
+    font-size: 1.1em;
 }
 #formulaire input, select, textarea{
     padding-left: 10px;
@@ -731,6 +769,7 @@ textarea{
     font-size: 1.2em;
 }
 .form_last_p{
+    font-size: 1.1em;
     line-height: 1.5em;
     color: rgba(250, 250, 250, 0.9);
 }
@@ -761,9 +800,9 @@ input:focus, select:focus, textarea:focus{
     color: #D92950;
     text-decoration: none;
 }
-#section10 a:hover{
+/* #section10 a:hover{
     border-bottom: 2.5px solid #D92950 ;
-}
+} */
 #formulaire button{
     color: #FFF;
     background-color: #d92950;
@@ -866,7 +905,7 @@ address{
     font-weight: 700;
     color: #fff;
 }
-.adresse .info_kda:hover, .fab:hover{
+/* .adresse .info_kda:hover, .fab:hover{
     border-bottom: 2px solid #FF046B;
     color: #FF046B;
     padding-bottom: 2px;
@@ -874,4 +913,4 @@ address{
 .inscription a:hover{
     border-bottom: 2px solid #FF046B;
     padding-bottom: 2px;
-}
+} */
