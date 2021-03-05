@@ -1,3 +1,4 @@
+/* Réinitialisation des marges de la page*/
 *{
     margin: 0;
     padding: 0;
@@ -9,11 +10,34 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
+
 /* parametrage par défaut de différentes sections, textes, couleurs, marges*/
+.flex_row{
+    display: flex;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.flex_center{
+    justify-content: center;
+}
+.flex_around{
+    justify-content: space-around;
+}
+.flex_between{
+    justify-content: space-between;
+}
 .grey_section{
     background-color: #f1f0f3; 
-    color: black;
+    color: #424345;
 }
+.pink_section{
+    background: #d92950;
+    color: white;
+}
+
 .titre_blanc{
     font-style: normal;
     color: #fff;
@@ -24,29 +48,31 @@ body {
 } 
 .titre_noir{
     font-style: normal;
-    color: black;
+    color: #424345;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 700;
     font-size: 2.5em;
-    margin-bottom: 80px;
+}
+.titre_left{
+    text-align: left;
 }
 p{
     font-family: 'Montserrat', sans-serif;
     font-weight:400 ;
 }
-/*travail sur la barre de navigation, fixation et autre*/
+/* Travail sur le header soit la section 0*/
+header{
+    margin-top: 80px;
+}
+/* Redimensionnement du logo*/
 #logo{
     margin-left: 15%;
     margin-top: 10%;
-    width: 100px;
-
+    width: 6vw;
 }
+/*travail sur la barre de navigation, fixation et autre*/
 #navigation{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background: #d92950;
     position: fixed;
     top: 0;
@@ -55,19 +81,16 @@ p{
     z-index: 5000;
     width: 100vw;
     height: 80px;   
-    /* margin-bottom: 80px; */
+}
+nav .current{
+    border-bottom: 2.5px solid rgba(255,4,107,1);
 }
 nav ol{
-    display: flex;
-    flex-direction: row ;
     margin-top: 7%;  
 }
 nav li{
     margin-right: 50px;
     list-style: none;   
-}
-nav .current{
-    border-bottom: 2.5px solid rgba(255,4,107,1);
 }
 nav li a{
     font-family: 'Roboto', sans-serif;
@@ -77,12 +100,23 @@ nav li a{
     color: #FFFFFF;
     text-decoration: none;
 }
-nav li:active{
-    border-bottom: 2.5px solid rgba(255,4,107,1);
+.underligne{
+    display: inline-block;
 }
-nav li:hover{
-    border-bottom: 2.5px solid rgba(255,4,107,1);
+.underligne::after{
+    
+    width: 0;
+    display: block;
+    content: '';
+    height: 2px;
+    background-color: rgba(255,4,107,1);
+    transition: width .3s;
 }
+.underligne:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
 /* ________________________________ */
 #section_1{
     width: 100vw;
@@ -136,7 +170,7 @@ nav li:hover{
     color: white;
 }
 #section10 #formulaire{
-    width: 75vw;
+    width: 85vw;
     margin: auto;
 }
 #section10 fieldset{
@@ -152,66 +186,60 @@ nav li:hover{
     font-weight: 700;
     margin-top: 50px;
     text-align: center;
+    font-size: 1.1em;
 }
-
 #formulaire input, select, textarea{
     padding-left: 10px;
     font-family: 'Roboto', sans-serif;  
-    color : #757575; 
-
+    color : #757575;
+}
+.hidden_option{
+   display: none;
 }
 select{
     appearance: none;
     background-image: url(img/svg/double-arrow-svgrepo-com.svg);
     background-size: .7em;
-    background-position: calc(100% - 1em) center;
+    background-position: 98% center;
     background-repeat: no-repeat;
 }
 select::-ms-expand {
-  display: none;
+    display: none;
 }
 textarea{
     padding-top: 10px;
     height: 20px ;
+    resize:none;
 }
 .placeholder ::placeholder,#formulaire option { 
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-  
-  }
-  
-  .placeholder :-ms-input-placeholder {
+}
+.placeholder :-ms-input-placeholder {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-  
-  }
-  .placeholder ::-ms-input-placeholder { 
+}
+.placeholder ::-ms-input-placeholder { 
     font-family: 'Roboto', sans-serif;   
     font-size: 1.2em;
 }
 .form_last_p{
+    font-size: 1.1em;
     line-height: 1.5em;
     color: rgba(250, 250, 250, 0.9);
 }
-
-
 #section10 .colonne{
-    width: 49%;
-    
+    width: 49%;    
 }
 #formulaire_colonne{
     margin: 20px 0;
-    display: flex;
     width: 100%;
-    
-    justify-content: space-between;
 }
 #section10 input:not(.envoie), select{
     width: 100%;
     height: 40px;
     margin: 8px 0;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif; 
 }
 textarea{
     width: 100%;
@@ -219,17 +247,12 @@ textarea{
     margin: 8px 0;
 }
 input:focus, select:focus, textarea:focus{
-    outline: 3px solid rgba(217, 41, 80, 0.3);
- 
-    
+    outline: 4px solid rgba(217, 41, 80, 0.2);   
 }
 
 #section10 a{
     color: #D92950;
     text-decoration: none;
-}
-#section10 a:hover{
-    border-bottom: 2.5px solid #D92950 ;
 }
 #formulaire button{
     color: #FFF;
@@ -248,7 +271,8 @@ input:focus, select:focus, textarea:focus{
 #formulaire button:hover{
     background: transparent;
     transition: 0.3s;
-    border: 2px solid #d92950 
+    border: 2px solid #d92950 ;
+    cursor: pointer;
 }
 /* _______________________________________________________ bas de page ___________________________________________________________*/
 footer{
@@ -257,8 +281,6 @@ footer{
     color: #fff;
 }
 .flex_ligne{
-    display: flex;
-    justify-content: center;
     width: 85vw;
     margin: 70px auto;
 }
@@ -282,13 +304,11 @@ address{
     text-decoration: none;
     line-height: 1.3em;
 }
-
 .adresse_icon{
     color: #d92950 ;
     font-size: 2.2em;
     margin: 60px 25px 0 0;
 }
-
 .inscription p:nth-of-type(1){
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6em;
@@ -323,8 +343,9 @@ address{
     background: none;
     color:#1B0628;
     transition: 0.3s;
+    cursor: pointer;
+    
 }
-
 .inscription form{
     margin-bottom: 230px;
 }
@@ -334,14 +355,8 @@ address{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #fff;
+    font-size: 1.1em;
 }
-
 .adresse .info_kda:hover, .fab:hover{
-    border-bottom: 2px solid #FF046B;
     color: #FF046B;
-    padding-bottom: 2px;
-}
-.inscription a:hover{
-    border-bottom: 2px solid #FF046B;
-    padding-bottom: 2px;
 }

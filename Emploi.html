@@ -11,19 +11,20 @@
     <title>Kinshasa Digital Recrute</title>
 </head>
 <body>
-    <header>
-        <div id="navigation">
+    <header class="flex_column">
+        <!-- barre de navigation-->
+        <div id="navigation" class="flex_row flex_between">
             <!-- image-->
             <div id="image">
                 <a href="Index.html"><img src="img/logo_white.png" alt="Logo Kinshasa Digital Academy" id="logo"></a>
             </div>
             <!-- barre de navigation-->
             <nav>
-                <ol>
-                    <li class="accueil"><a href="index.html">Accueil</a></li>
-                    <li><a href="#">Academy</a></li>
-                    <li><a class="current" href="Emploi.html">Emploi</a></li>
-                    <li><a href="#">contact</a></li>
+                <ol class="flex_row">
+                    <li class="accueil underligne"><a class="current" href="index.html">Accueil</a></li>
+                    <li><a href="#" class="underligne">Academy</a></li>
+                    <li><a href="Emploi.html" class="underligne">Emploi</a></li>
+                    <li><a href="#" class="underligne">contact</a></li>
                 </ol>
             </nav>
         </div>
@@ -57,15 +58,15 @@
     <section id="section10">
         <div id="formulaire" class="placeholder">
         <h2 class="titre_blanc">Formulaire de contact</h2>
-        <p>Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le <a href="#"> formulaire de préinscription</a>.</p>
-        <form action="kda.php" method="post">
+        <p>Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le <a href="#" class="underligne"> formulaire de préinscription</a>.</p>
+        <form action="kda.php">
             
-                <div id="formulaire_colonne">
+                <div id="formulaire_colonne" class="flex_row flex_between">
                     
                     <fieldset class="colonne">
                         <legend>Quel titre vous décrit le mieux ?</legend>
                         <p><select name="Titre" >
-                            <option class="hidden_option" hidden disabled selected value> &nbsp;</option>
+                            <option class="hidden_option" hidden disabled selected value> &nbsp; </option>
                             <option value="Consultant">Consultant</option>
                             <option value="Entrepreneur">Entrepreneur</option>
                             <option value="Etudiant">Etudiant</option>
@@ -84,7 +85,7 @@
                     <fieldset class="colonne">
                         <legend>Secteur d'activité</legend>
                         <p><select name="Secteur" >
-                            <option class="hidden_option" hidden disabled selected value> &nbsp;</option>
+                            <option class="hidden_option" hidden disabled selected value="">&nbsp;</option>
                             <option value="Agriculture">Agriculture et Foresterie</option>
                             <option value="Aéroport">Aéroport</option>
                             <option value="Construction">Construction</option>
@@ -134,7 +135,7 @@
                 <textarea name="more_info"  cols="30" rows="10" placeholder="Demande :Merci d'indiquer le maximum de précision afin qu'on puisse vous donner une reponse complète"></textarea>
             </fieldset>
             <p class="form_last_p">
-                Dû à un nombre important de demandes, nous ne traiterons pas les messages concernant les inscriptions à KDA, inscrivez-vous à l’aide du <a href="#">formulaire</a>.</p>
+                Dû à un nombre important de demandes, nous ne traiterons pas les messages concernant les inscriptions à KDA, inscrivez-vous à l’aide du <a href="#" class="underligne">formulaire</a>.</p>
                <p class="form_last_p"> Pour toute demande de devis, merci de nous donner le maximum de détails possible afin de nous aider à vous répondre le plus précisément possible</p>
             
             <button type="submit">envoyer</button>
@@ -143,7 +144,7 @@
     </section>
 <!-- ________________________________________ footer _____________________________________________________________-->
     <footer>
-        <div class="flex_ligne">
+        <div class="flex_ligne flex_row flex_center">
             <div class="adresse">
                 <address>
                     <strong>Kinshasa Digital</strong><br>
@@ -154,13 +155,13 @@
                     République Démocratique du Congo <br>
                 </address>
                 <p>
-                <a class="info_kda" href="mailto:info@kinshasadigital.com">info@kinshasadigital.com</a> <br>
-                <a class="info_kda" href="tel:+243891341236">+243 891 341 236</a> <br>
+                <a class="info_kda underligne" href="mailto:info@kinshasadigital.com">info@kinshasadigital.com</a> <br>
+                <a class="info_kda underligne" href="tel:+243891341236">+243 891 341 236</a> <br>
                 </p>
                 <div class="adresse_img">
-                    <a href="#"><i class="fab fa-facebook-f adresse_icon"></i></a>
-                    <a href="#"> <i class="fab fa-twitter adresse_icon"></i></a>
-                    <a href="#"> <i class="fab fa-linkedin adresse_icon"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f adresse_icon underligne"></i></a>
+                    <a href="#"> <i class="fab fa-twitter adresse_icon underligne"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin adresse_icon underligne"></i></a>
 
                    
                 </div>
@@ -169,10 +170,10 @@
                 <p>
                     Inscrivez-vous à notre <strong>newsletter</strong> pour vous tenir au courant de nos activités.
                 </p>
-                <form action="kda.php" class="placeholder" method="post">
+                <form action="kda.php" class="placeholder">
                     <input type="email" placeholder="Adresse E-mail"><button>S'INSCRIRE</button>
                 </form>
-                <p><a href="#">Mentions légales</a></p>
+                <p><a href="#" class="underligne">Mentions légales</a></p>
             </div>
         </div>
     </footer>

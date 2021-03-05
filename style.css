@@ -1,10 +1,3 @@
-/*
-
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Ubuntu Mono', monospace;
-
-*/
 
 /* Réinitialisation des marges de la page*/
 *{
@@ -19,6 +12,8 @@ body {
     overflow-x: hidden;
 }
 
+
+/* parametrage par défaut de différentes sections, textes, couleurs, marges*/
 .flex_row{
     display: flex;
 }
@@ -35,7 +30,6 @@ body {
 .flex_between{
     justify-content: space-between;
 }
-/* parametrage par défaut de différentes sections, textes, couleurs, marges*/
 .grey_section{
     background-color: #f1f0f3; 
     color: #424345;
@@ -64,7 +58,6 @@ body {
 .titre_left{
     text-align: left;
 }
-
 p{
     font-family: 'Montserrat', sans-serif;
     font-weight:400 ;
@@ -93,16 +86,13 @@ header{
 nav .current{
     border-bottom: 2.5px solid rgba(255,4,107,1);
 }
-/* bloc de liste*/
 nav ol{
     margin-top: 7%;  
 }
-/* reconfiguration de style de liste et espacement */
 nav li{
     margin-right: 50px;
     list-style: none;   
 }
-/*travail sur les liens de la navigation*/
 nav li a{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -111,11 +101,6 @@ nav li a{
     color: #FFFFFF;
     text-decoration: none;
 }
-/** --------- ici sera placé la pseudo classe active pour le lien --------- */
-nav li:active{
-    border-bottom: 2.5px solid rgba(255,4,107,1);
-}
-
 .underligne{
     display: inline-block;
 }
@@ -132,11 +117,7 @@ nav li:active{
     width: 100%;
     transition: width .3s;
 }
-/*  la pseudo classe hover des listes*/
-/* nav li:hover{
-    border-bottom: 2.5px solid rgba(255,4,107,1);
-} */
-/* travail sur le bloc central (h1, bouton et logos */
+
 #head_center{ /* image de fond et dimensionnement*/   
     align-items: center;
     height: 110vh;
@@ -155,7 +136,6 @@ nav li:active{
     text-align: center;
     font-weight: 900;
 }
-/* modification de la couleur jaune sur qualité */
 #dev_qualifié{
     color: #ffe64d;
 }
@@ -165,12 +145,10 @@ nav li:active{
     width: 40%;
     height: auto;   
 }
-/* modification du style de liste*/
 #head_center li{
     list-style: none;
     padding: 10px;
 }
-/* création du bouton*/
 #head_center .btn_head{
     list-style: none;
     background: white; 
@@ -184,8 +162,6 @@ nav li:active{
     text-decoration: none;
     border:  2px solid white;
 }
-
-/*travail sur le hover*/
 #head_center .btn_head:hover {
     background: none;
     color: white;
@@ -220,27 +196,22 @@ nav li:active{
     width: 100%;
     padding-top: 110px  ;
     padding-bottom: 110px;
-
 }
 .titre_dev{
     font-size: 2.7em;
     width: 90%;
     margin-left: 15px;
 }
-/* div principal contenant les images*/
 #image_present{
     width: 40%;
     position: relative;
-
 }
-/* image texaf*/
 .img_texaf{
     width: 600px;
     border-radius: 20px;
     position: absolute;
     left: -15%;
 }
-/* image cohorte kda 2020 */
 .img_kda2020{
     width: 390px;
     border-radius: 20px;
@@ -248,33 +219,28 @@ nav li:active{
     top: 40%;
     left: 35%;
 }
-/* div principal illustrtion developpeurs*/
+
 #quality_dev{
     width: 60%;  
     margin-left: 10px;
 }
-
 #quality_dev h5{
     font-size: 1.4em;
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight:700 ;
 }
-/* groupe des 4 illustrations developpeurs */
 .quality_dev_illustration_group{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 0 20px;
 }
-/* div contenant l'icone et le texte h5*/
 .quality_dev_illustration{
     width: 45%;
     height: auto;
     text-align: center;
     margin-top: 40px;
-
-
 }
 /* travail sur les icones */
 .quality_dev_icons{
@@ -289,17 +255,11 @@ nav li:active{
 .bloc_earth{
     margin-bottom: 30px;
 }
-/* .bloc_cup{
-    margin-bottom: 5px;
-
-} */
-
 /* --------------------------------------------------Deuxième section ------------------------------------------------ */
 #section2{
     align-items: center;
     padding: 100px 0;
  }
- /*travail sur la div des images*/
  #partner_img{
     width: 70vw;
     align-items: center;
@@ -309,7 +269,6 @@ nav li:active{
      width: 100px;
      max-width: 100%;   
  }
-
  /* ------------------------------------- Troisème section  --------------------------------------------------------------*/
  #section3{
      width: 100vw;
@@ -333,18 +292,18 @@ nav li:active{
     border-top: 10px solid #d92950;
 }
  #section3 h3{
-     text-align: center;
-     color: #d92950;
-     font-size: 30px;
-     font-family: 'Montserrat', sans-serif ;
-     font-weight: 700;
-     margin: 20px 0px;
+    text-align: center;
+    color: #d92950;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 700;
+    margin: 20px 0px;
  }
  #section3 h2{
-     color: #341F41;
+    color: #341F41;
  }
  .accompagnement_texte p:nth-child(2){
-     text-align: center;
+    text-align: center;
  }
  .accompagnement_texte p:nth-child(3){
     text-align: center;
@@ -382,22 +341,17 @@ nav li:active{
 }
 
 #section4_slide{
-    width: 70vw;
+    width: 80vw;
     margin: auto;
-    /*overflow : scroll;*/
-}
-/*#section4_slide::-webkit-scrollbar{
-    background: transparent;
-}*/
-.box_image{
-    padding: 0 30px;
-    
-}
-.box_image img{
-    width: 22vw;
-    border-radius: 10px;
 }
 
+.box_image{
+    width: 30%;
+}
+.box_image img{
+    width: 100%;
+    border-radius: 10px;
+}
 .box_image a{
     text-decoration: none;
     color: #fff;
@@ -447,7 +401,6 @@ nav li:active{
 .ligne_1, .ligne_2{
     margin: 10px 0;
 }
-
 /* --------------------------------------------------- secetion5 ------------------------------------------------------------ */
 #section5{
     background: #fff;
@@ -461,7 +414,6 @@ nav li:active{
 .tableaux{
     margin: 0px 25px;
 }
-
 #tableau_1{
     width: 45vw;
 }
@@ -512,7 +464,6 @@ nav li:active{
 }
 #tableau2_body{
     padding: 20px 30px; 
-
     font-family: "Ubuntu Mono", monospace;
     font-size: 1.4em;
     font-weight: 400;
@@ -528,14 +479,11 @@ nav li:active{
     padding-bottom: 50px ;
     border-radius: 10px;
 }
-
-
 /* ------------------------------------------------------ section 6 ----------------------------*/
 #section6{
     background: #AE3753;
     padding: 100px 0;
 }
-
 #pret_illustration{
     width: 100vw;
 }
@@ -543,27 +491,22 @@ nav li:active{
     width: 80vw;
     margin: auto;
     margin-top: 30px; 
- 
 }
 .pret_icon{
     margin: 20px;
     width: 300px; 
-   
 }
 .pret_icon h4{
-
-    margin-right: 15px;
+    margin-right: 20px;
     text-align: center;
     font-family: "Ubuntu Mono", monospace;
     font-size: 1.2em;
     font-weight: 700;
     font-style: normal; 
-
 }
 .image_fleche{
     align-items: center;
-    margin-bottom: 20px; 
-    
+    margin-bottom: 20px;  
 }
 .icon_container{
     width: 70px ;
@@ -613,35 +556,29 @@ nav li:active{
 }
 #create_emploi{
     margin-left:15px;
-    
 }
 #emploi_1{
     width: 42vw;
+    margin-top: 15px;
 }
 #emploi_1 img{
     width: 100%;
 }
-
 #emploi_1 p:nth-of-type(1){
     margin-top: 60px;
     font-size: 1.15em;
     line-height: 1.5em;
     margin-bottom: 30px;
-   
 }
 #emploi_1 span{
     color: #D92950;
 }
 .titre_emploi{
     font-size: 2.7em;
-    
 }
 #emploi_2{
     width: 45vw;   
     flex-wrap: wrap;
-    
-    
-    
 }
 #emploi_2 p:last-child{
     font-size: 1.05em;
@@ -680,7 +617,6 @@ nav li:active{
 .logo_media{
     margin: 0 30px;
 }
-
 /* __________________________________________________ section 9 _______________________________*/
 #section9{
     padding:100px 0;
@@ -734,8 +670,7 @@ nav li:active{
 #formulaire input, select, textarea{
     padding-left: 10px;
     font-family: 'Roboto', sans-serif;  
-    color : #757575; 
-
+    color : #757575;
 }
 .hidden_option{
    display: none;
@@ -748,21 +683,20 @@ select{
     background-repeat: no-repeat;
 }
 select::-ms-expand {
-  display: none;
+    display: none;
 }
 textarea{
     padding-top: 10px;
     height: 20px ;
+    resize:none;
 }
 .placeholder ::placeholder,#formulaire option { 
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-  
 }
 .placeholder :-ms-input-placeholder {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-  
 }
 .placeholder ::-ms-input-placeholder { 
     font-family: 'Roboto', sans-serif;   
@@ -774,8 +708,7 @@ textarea{
     color: rgba(250, 250, 250, 0.9);
 }
 #section10 .colonne{
-    width: 49%;
-    
+    width: 49%;    
 }
 #formulaire_colonne{
     margin: 20px 0;
@@ -800,9 +733,6 @@ input:focus, select:focus, textarea:focus{
     color: #D92950;
     text-decoration: none;
 }
-/* #section10 a:hover{
-    border-bottom: 2.5px solid #D92950 ;
-} */
 #formulaire button{
     color: #FFF;
     background-color: #d92950;
@@ -904,13 +834,8 @@ address{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #fff;
+    font-size: 1.1em;
 }
-/* .adresse .info_kda:hover, .fab:hover{
-    border-bottom: 2px solid #FF046B;
+.adresse .info_kda:hover, .fab:hover{
     color: #FF046B;
-    padding-bottom: 2px;
 }
-.inscription a:hover{
-    border-bottom: 2px solid #FF046B;
-    padding-bottom: 2px;
-} */
