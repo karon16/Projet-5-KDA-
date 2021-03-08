@@ -628,11 +628,12 @@ nav li a{
     margin-top: 50px;
 }
 .soutien_img_bloc,.soutien_twitter_bloc {
-    width: 280px;
+    width: 25%;
     margin: 25px 15px;
+    
 }
 .soutien_img_bloc img{
-    width: 280px;
+    width: 100%;
     border-radius:15px ;
     margin-bottom: 20px;
 }
