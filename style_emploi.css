@@ -336,12 +336,12 @@ address{
     font-weight: 700;
     padding: 15px 25px;
     font-size: 1.05em;
-    border: none;
+    border: 3px solid #d92950;
     position: absolute;
 }
 .inscription button:hover{
     background: none;
-    color:#1B0628;
+    color:#d92950;
     transition: 0.3s;
     cursor: pointer;
     
